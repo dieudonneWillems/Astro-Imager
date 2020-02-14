@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021C7BAB23F71348009B4F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C7BAA23F71348009B4F3A /* AppDelegate.swift */; };
+		021C7BAD23F71348009B4F3A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C7BAC23F71348009B4F3A /* Document.swift */; };
+		021C7BB023F71348009B4F3A /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C7BAE23F71348009B4F3A /* Document.xib */; };
+		021C7BB323F71348009B4F3A /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 021C7BB123F71348009B4F3A /* Document.xcdatamodeld */; };
+		021C7BB523F7134A009B4F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021C7BB423F7134A009B4F3A /* Assets.xcassets */; };
+		021C7BB823F7134A009B4F3A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021C7BB623F7134A009B4F3A /* MainMenu.xib */; };
+		021C7BC423F7134A009B4F3A /* Astro_ImagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021C7BC323F7134A009B4F3A /* Astro_ImagerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		021C7BC023F7134A009B4F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 021C7B9F23F71348009B4F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 021C7BA623F71348009B4F3A;
+			remoteInfo = "Astro Imager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021C7BA723F71348009B4F3A /* Astro Imager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astro Imager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021C7BAA23F71348009B4F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		021C7BAC23F71348009B4F3A /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		021C7BAF23F71348009B4F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		021C7BB223F71348009B4F3A /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		021C7BB423F7134A009B4F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021C7BB723F7134A009B4F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		021C7BB923F7134A009B4F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		021C7BBA23F7134A009B4F3A /* Astro_Imager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Astro_Imager.entitlements; sourceTree = "<group>"; };
+		021C7BBF23F7134A009B4F3A /* Astro ImagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Astro ImagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		021C7BC323F7134A009B4F3A /* Astro_ImagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astro_ImagerTests.swift; sourceTree = "<group>"; };
+		021C7BC523F7134A009B4F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		021C7BA423F71348009B4F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C7BBC23F7134A009B4F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021C7B9E23F71348009B4F3A = {
+			isa = PBXGroup;
+			children = (
+				021C7BA923F71348009B4F3A /* Astro Imager */,
+				021C7BC223F7134A009B4F3A /* Astro ImagerTests */,
+				021C7BA823F71348009B4F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		021C7BA823F71348009B4F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				021C7BA723F71348009B4F3A /* Astro Imager.app */,
+				021C7BBF23F7134A009B4F3A /* Astro ImagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		021C7BA923F71348009B4F3A /* Astro Imager */ = {
+			isa = PBXGroup;
+			children = (
+				021C7BAA23F71348009B4F3A /* AppDelegate.swift */,
+				021C7BAC23F71348009B4F3A /* Document.swift */,
+				021C7BAE23F71348009B4F3A /* Document.xib */,
+				021C7BB423F7134A009B4F3A /* Assets.xcassets */,
+				021C7BB623F7134A009B4F3A /* MainMenu.xib */,
+				021C7BB923F7134A009B4F3A /* Info.plist */,
+				021C7BBA23F7134A009B4F3A /* Astro_Imager.entitlements */,
+				021C7BB123F71348009B4F3A /* Document.xcdatamodeld */,
+			);
+			path = "Astro Imager";
+			sourceTree = "<group>";
+		};
+		021C7BC223F7134A009B4F3A /* Astro ImagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				021C7BC323F7134A009B4F3A /* Astro_ImagerTests.swift */,
+				021C7BC523F7134A009B4F3A /* Info.plist */,
+			);
+			path = "Astro ImagerTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		021C7BA623F71348009B4F3A /* Astro Imager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021C7BC823F7134A009B4F3A /* Build configuration list for PBXNativeTarget "Astro Imager" */;
+			buildPhases = (
+				021C7BA323F71348009B4F3A /* Sources */,
+				021C7BA423F71348009B4F3A /* Frameworks */,
+				021C7BA523F71348009B4F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Astro Imager";
+			productName = "Astro Imager";
+			productReference = 021C7BA723F71348009B4F3A /* Astro Imager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		021C7BBE23F7134A009B4F3A /* Astro ImagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021C7BCB23F7134A009B4F3A /* Build configuration list for PBXNativeTarget "Astro ImagerTests" */;
+			buildPhases = (
+				021C7BBB23F7134A009B4F3A /* Sources */,
+				021C7BBC23F7134A009B4F3A /* Frameworks */,
+				021C7BBD23F7134A009B4F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				021C7BC123F7134A009B4F3A /* PBXTargetDependency */,
+			);
+			name = "Astro ImagerTests";
+			productName = "Astro ImagerTests";
+			productReference = 021C7BBF23F7134A009B4F3A /* Astro ImagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		021C7B9F23F71348009B4F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = lapsedpacifist;
+				TargetAttributes = {
+					021C7BA623F71348009B4F3A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					021C7BBE23F7134A009B4F3A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 021C7BA623F71348009B4F3A;
+					};
+				};
+			};
+			buildConfigurationList = 021C7BA223F71348009B4F3A /* Build configuration list for PBXProject "Astro Imager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 021C7B9E23F71348009B4F3A;
+			productRefGroup = 021C7BA823F71348009B4F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				021C7BA623F71348009B4F3A /* Astro Imager */,
+				021C7BBE23F7134A009B4F3A /* Astro ImagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		021C7BA523F71348009B4F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C7BB523F7134A009B4F3A /* Assets.xcassets in Resources */,
+				021C7BB023F71348009B4F3A /* Document.xib in Resources */,
+				021C7BB823F7134A009B4F3A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C7BBD23F7134A009B4F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		021C7BA323F71348009B4F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C7BB323F71348009B4F3A /* Document.xcdatamodeld in Sources */,
+				021C7BAD23F71348009B4F3A /* Document.swift in Sources */,
+				021C7BAB23F71348009B4F3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		021C7BBB23F7134A009B4F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021C7BC423F7134A009B4F3A /* Astro_ImagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		021C7BC123F7134A009B4F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 021C7BA623F71348009B4F3A /* Astro Imager */;
+			targetProxy = 021C7BC023F7134A009B4F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		021C7BAE23F71348009B4F3A /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				021C7BAF23F71348009B4F3A /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		021C7BB623F7134A009B4F3A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				021C7BB723F7134A009B4F3A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		021C7BC623F7134A009B4F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		021C7BC723F7134A009B4F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		021C7BC923F7134A009B4F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Astro Imager/Astro_Imager.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Astro Imager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapsedpacifist.Astro-Imager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		021C7BCA23F7134A009B4F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Astro Imager/Astro_Imager.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Astro Imager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapsedpacifist.Astro-Imager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		021C7BCC23F7134A009B4F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = "Astro ImagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapsedpacifist.Astro-ImagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astro Imager.app/Contents/MacOS/Astro Imager";
+			};
+			name = Debug;
+		};
+		021C7BCD23F7134A009B4F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J2S9726G2L;
+				INFOPLIST_FILE = "Astro ImagerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapsedpacifist.Astro-ImagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astro Imager.app/Contents/MacOS/Astro Imager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021C7BA223F71348009B4F3A /* Build configuration list for PBXProject "Astro Imager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C7BC623F7134A009B4F3A /* Debug */,
+				021C7BC723F7134A009B4F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021C7BC823F7134A009B4F3A /* Build configuration list for PBXNativeTarget "Astro Imager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C7BC923F7134A009B4F3A /* Debug */,
+				021C7BCA23F7134A009B4F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021C7BCB23F7134A009B4F3A /* Build configuration list for PBXNativeTarget "Astro ImagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021C7BCC23F7134A009B4F3A /* Debug */,
+				021C7BCD23F7134A009B4F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		021C7BB123F71348009B4F3A /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				021C7BB223F71348009B4F3A /* Document.xcdatamodel */,
+			);
+			currentVersion = 021C7BB223F71348009B4F3A /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 021C7B9F23F71348009B4F3A /* Project object */;
+}
