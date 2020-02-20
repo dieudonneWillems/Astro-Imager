@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DirectoryInspectorController">
+            <connections>
+                <outlet property="baseFolderPUB" destination="b7Z-d6-Vcn" id="W2g-qk-vu7"/>
+                <outlet property="biasFramesPUB" destination="2XP-Vu-Nz9" id="LPm-PJ-WkK"/>
+                <outlet property="darkFramesPUB" destination="Vq4-x8-Z9E" id="dvD-4K-gqs"/>
+                <outlet property="flatFramesPUB" destination="KTk-if-qnQ" id="N1R-af-lQd"/>
+                <outlet property="lightFramesPUB" destination="r74-OD-hjX" id="1XH-Ik-96Q"/>
+                <outlet property="pathLabel" destination="9yc-A7-Hp3" id="fRc-A3-W2K"/>
+                <outlet property="view" destination="c22-O7-iKe" id="egb-Ab-6Di"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RYK-V6-wy1">
+                    <rect key="frame" x="2" y="168" width="284" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="cIm-LC-5p2"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Image Folder" id="aqb-NP-UGR">
+                        <font key="font" metaFont="systemBold" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b7Z-d6-Vcn">
+                    <rect key="frame" x="104" y="139" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="ykH-Op-g8q"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="2ue-af-eU7" id="blj-sU-Hnc">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <menu key="menu" id="7s2-i8-7Gs">
+                            <items>
+                                <menuItem title="Last Used Folder" state="on" id="2ue-af-eU7"/>
+                                <menuItem title="Default Folder" id="7Br-E5-kaQ"/>
+                                <menuItem isSeparatorItem="YES" id="Hez-ln-mwt"/>
+                                <menuItem title="Other" id="vpo-hQ-kuY"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="baseFolderChanged:" target="-2" id="Htp-ac-O21"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-DF-0vf">
+                    <rect key="frame" x="2" y="146" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="GZ6-1I-mcj"/>
+                        <constraint firstAttribute="height" constant="14" id="Kxa-ss-T06"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Base Folder" id="fSD-V3-m7T">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="9yc-A7-Hp3">
+                    <rect key="frame" x="107" y="110" width="165" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="fGQ-k3-o4s"/>
+                        <constraint firstAttribute="height" constant="27" id="jUw-At-BA6"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" selectable="YES" title="Multiline Label" id="orQ-ta-L2K">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r74-OD-hjX">
+                    <rect key="frame" x="104" y="79" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="ceU-go-EEI"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="DNi-kb-pia" id="spp-X3-afV">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <menu key="menu" id="9WN-YE-Ddy">
+                            <items>
+                                <menuItem title="Last Used Folder" state="on" id="DNi-kb-pia"/>
+                                <menuItem title="Default Folder" id="PSC-xs-hbT"/>
+                                <menuItem isSeparatorItem="YES" id="XSP-ae-DZF"/>
+                                <menuItem title="Other" id="t2a-mN-UsH"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="lightFramesChanged:" target="-2" id="Ujv-DU-KqN"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-WI-ARc">
+                    <rect key="frame" x="2" y="84" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="0NR-O5-qFD"/>
+                        <constraint firstAttribute="width" constant="96" id="zqS-OK-4Os"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Light Frames" id="Bky-xH-hIu">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KTk-if-qnQ">
+                    <rect key="frame" x="104" y="55" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="G3f-C3-gTc"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cPW-80-XcK" id="zFx-6a-pW5">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <menu key="menu" id="r9s-Iz-pgi">
+                            <items>
+                                <menuItem title="Last Used Folder" state="on" id="cPW-80-XcK"/>
+                                <menuItem title="Default Folder" id="db2-pf-hfW"/>
+                                <menuItem isSeparatorItem="YES" id="C0Z-KK-8Pa"/>
+                                <menuItem title="Other" id="41Z-mZ-wz4"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="flatFramesChanged:" target="-2" id="oZ0-sF-WWD"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OUj-0K-lUY">
+                    <rect key="frame" x="2" y="60" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Bfk-7k-D9r"/>
+                        <constraint firstAttribute="width" constant="96" id="HpQ-rd-nYE"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Flat Frames" id="RzX-1E-2kH">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-Vu-Nz9">
+                    <rect key="frame" x="104" y="31" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="xTf-ih-etQ"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="sbV-ZG-BwF" id="tJn-Mb-Rmb">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <menu key="menu" id="1ca-MI-opq">
+                            <items>
+                                <menuItem title="Last Used Folder" state="on" id="sbV-ZG-BwF"/>
+                                <menuItem title="Default Folder" id="Lzg-Ec-Ghp"/>
+                                <menuItem isSeparatorItem="YES" id="Piy-J9-CVE"/>
+                                <menuItem title="Other" id="eRi-M9-hzh"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="biasFramesChanged:" target="-2" id="Zhc-Lj-wrv"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8ln-BY-sy1">
+                    <rect key="frame" x="2" y="36" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="tcL-Ki-wUQ"/>
+                        <constraint firstAttribute="width" constant="96" id="vA7-8Q-UMJ"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Bias Frames" id="0c0-Hh-3Tg">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vq4-x8-Z9E">
+                    <rect key="frame" x="104" y="7" width="185" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="eJB-s4-Kq4"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Tvg-ob-z9X" id="X7H-bP-bXg">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <menu key="menu" id="wFy-TF-ug6">
+                            <items>
+                                <menuItem title="Last Used Folder" state="on" id="Tvg-ob-z9X"/>
+                                <menuItem title="Default Folder" id="v9c-W4-U2k"/>
+                                <menuItem isSeparatorItem="YES" id="4nB-wF-Xib"/>
+                                <menuItem title="Other" id="3fd-At-3RO"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="darkFramesChanged:" target="-2" id="qYO-ty-v1h"/>
+                    </connections>
+                </popUpButton>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ulv-To-HHG">
+                    <rect key="frame" x="2" y="12" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="0QM-11-WJT"/>
+                        <constraint firstAttribute="height" constant="14" id="MuX-Oe-7vh"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Dark Frames" id="AbN-6W-Cyo">
+                        <font key="font" metaFont="controlContent" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="BDt-IP-k5e">
+                    <rect key="frame" x="272" y="124" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="ONH-mi-XBF"/>
+                        <constraint firstAttribute="height" constant="12" id="S4u-ih-a6q"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFollowLinkFreestandingTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="4Nx-PQ-gry">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="controlContent" size="11"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showInFinderClicked:" target="-2" id="a7j-zZ-xfO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="RYK-V6-wy1" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="2" id="0Nu-2I-cJa"/>
+                <constraint firstItem="Vq4-x8-Z9E" firstAttribute="top" secondItem="2XP-Vu-Nz9" secondAttribute="bottom" constant="6" id="1I4-rA-g2T"/>
+                <constraint firstItem="9yc-A7-Hp3" firstAttribute="top" secondItem="b7Z-d6-Vcn" secondAttribute="bottom" constant="5" id="1TY-Vh-SMH"/>
+                <constraint firstItem="r74-OD-hjX" firstAttribute="baseline" secondItem="0fb-WI-ARc" secondAttribute="baseline" id="2iq-d5-7KT"/>
+                <constraint firstAttribute="trailing" secondItem="b7Z-d6-Vcn" secondAttribute="trailing" constant="4" id="2qU-fL-h9W"/>
+                <constraint firstItem="r74-OD-hjX" firstAttribute="leading" secondItem="0fb-WI-ARc" secondAttribute="trailing" constant="7" id="6vB-ld-oW0"/>
+                <constraint firstAttribute="trailing" secondItem="2XP-Vu-Nz9" secondAttribute="trailing" constant="4" id="98W-qQ-Y7f"/>
+                <constraint firstItem="2XP-Vu-Nz9" firstAttribute="top" secondItem="KTk-if-qnQ" secondAttribute="bottom" constant="6" id="9cE-aZ-QxV"/>
+                <constraint firstItem="b7Z-d6-Vcn" firstAttribute="leading" secondItem="7wl-DF-0vf" secondAttribute="trailing" constant="7" id="ASd-vV-Swx"/>
+                <constraint firstAttribute="trailing" secondItem="Vq4-x8-Z9E" secondAttribute="trailing" constant="4" id="DQN-6z-uyh"/>
+                <constraint firstItem="b7Z-d6-Vcn" firstAttribute="top" secondItem="RYK-V6-wy1" secondAttribute="bottom" constant="8" id="G1k-82-287"/>
+                <constraint firstItem="r74-OD-hjX" firstAttribute="leading" secondItem="0fb-WI-ARc" secondAttribute="trailing" constant="7" id="Hdw-hf-AF5"/>
+                <constraint firstAttribute="trailing" secondItem="KTk-if-qnQ" secondAttribute="trailing" constant="4" id="M90-3S-kCz"/>
+                <constraint firstAttribute="bottom" secondItem="Ulv-To-HHG" secondAttribute="bottom" constant="12" id="Mqq-B7-1Mj"/>
+                <constraint firstItem="7wl-DF-0vf" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="RJG-cn-g1p"/>
+                <constraint firstItem="r74-OD-hjX" firstAttribute="top" secondItem="9yc-A7-Hp3" secondAttribute="bottom" constant="10" id="T8S-rL-S9Y"/>
+                <constraint firstItem="Vq4-x8-Z9E" firstAttribute="leading" secondItem="Ulv-To-HHG" secondAttribute="trailing" constant="7" id="Uef-7G-1Mz"/>
+                <constraint firstItem="r74-OD-hjX" firstAttribute="top" secondItem="BDt-IP-k5e" secondAttribute="bottom" constant="24" id="Yye-LW-61P"/>
+                <constraint firstItem="0fb-WI-ARc" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="ZFI-Lk-ykp"/>
+                <constraint firstItem="7wl-DF-0vf" firstAttribute="top" secondItem="RYK-V6-wy1" secondAttribute="bottom" constant="8" id="bWf-db-Tp9"/>
+                <constraint firstAttribute="trailing" secondItem="RYK-V6-wy1" secondAttribute="trailing" constant="6" id="cKx-jt-sht"/>
+                <constraint firstItem="OUj-0K-lUY" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="dVL-MM-SgR"/>
+                <constraint firstItem="2XP-Vu-Nz9" firstAttribute="leading" secondItem="8ln-BY-sy1" secondAttribute="trailing" constant="7" id="edf-MT-mIU"/>
+                <constraint firstItem="Ulv-To-HHG" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="fop-3L-MSL"/>
+                <constraint firstItem="KTk-if-qnQ" firstAttribute="leading" secondItem="OUj-0K-lUY" secondAttribute="trailing" constant="7" id="hjh-0g-xj6"/>
+                <constraint firstItem="Ulv-To-HHG" firstAttribute="top" secondItem="8ln-BY-sy1" secondAttribute="bottom" constant="10" id="hox-mL-kdU"/>
+                <constraint firstItem="8ln-BY-sy1" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="ij1-tW-KKL"/>
+                <constraint firstItem="BDt-IP-k5e" firstAttribute="top" secondItem="b7Z-d6-Vcn" secondAttribute="bottom" constant="6" id="o11-2A-c2b"/>
+                <constraint firstAttribute="trailing" secondItem="r74-OD-hjX" secondAttribute="trailing" constant="4" id="rIZ-d4-QTI"/>
+                <constraint firstItem="KTk-if-qnQ" firstAttribute="top" secondItem="r74-OD-hjX" secondAttribute="bottom" constant="6" id="ryO-vC-BkQ"/>
+                <constraint firstItem="BDt-IP-k5e" firstAttribute="leading" secondItem="9yc-A7-Hp3" secondAttribute="trailing" constant="2" id="u4w-Q2-Uja"/>
+                <constraint firstItem="9yc-A7-Hp3" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="109" id="v4P-bd-0eg"/>
+                <constraint firstItem="OUj-0K-lUY" firstAttribute="top" secondItem="0fb-WI-ARc" secondAttribute="bottom" constant="10" id="vEC-uP-JS1"/>
+                <constraint firstItem="RYK-V6-wy1" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="4" id="vRz-oC-hju"/>
+                <constraint firstItem="8ln-BY-sy1" firstAttribute="top" secondItem="OUj-0K-lUY" secondAttribute="bottom" constant="10" id="zX1-Ad-paV"/>
+            </constraints>
+            <point key="canvasLocation" x="39" y="109"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
+    </resources>
+</document>

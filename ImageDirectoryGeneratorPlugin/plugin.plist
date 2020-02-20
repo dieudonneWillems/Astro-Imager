@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Image Folder Generator Plugin</string>
+	<key>description</key>
+	<string>This plugin provides a generator service that accesses all images in a directory.</string>
+	<key>services</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Image Folder</string>
+			<key>description</key>
+			<string>This generator identifies all images in a folder and makes them available to the application.</string>
+			<key>type</key>
+			<string>generator</string>
+		</dict>
+	</array>
+</dict>
+</plist>

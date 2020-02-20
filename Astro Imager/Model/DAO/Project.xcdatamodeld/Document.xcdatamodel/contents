@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AstroImageDAO" representedClassName=".AstroImageDAO" syncable="YES">
+        <attribute name="channelString" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="height" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="integrationTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isBiasFrame" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDarkFrame" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isFlatFrame" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isLightFrame" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isRGB" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sequenceNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary"/>
+        <attribute name="uri" optional="YES" attributeType="URI"/>
+        <attribute name="width" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="inStackedImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StackedImageDAO" inverseName="stackedImages" inverseEntity="StackedImageDAO"/>
+        <relationship name="properties" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PropertyDAO" inverseName="image" inverseEntity="PropertyDAO"/>
+        <relationship name="set" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="images" inverseEntity="ImageSetDAO"/>
+        <relationship name="transformation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageTransformDAO" inverseName="image" inverseEntity="ImageTransformDAO"/>
+    </entity>
+    <entity name="BooleanPropertyDAO" representedClassName=".BooleanPropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="booleanValue" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CelestialPositionDAO" representedClassName=".CelestialPositionDAO" syncable="YES">
+        <attribute name="centerDeclination" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="centerRightAscension" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="positionAngle" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="resolution" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="set" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="celestialPosition" inverseEntity="ImageSetDAO"/>
+    </entity>
+    <entity name="DataPropertyDAO" representedClassName=".DataPropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="dataValue" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="DatePropertyDAO" representedClassName=".DatePropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="dateValue" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="DoublePropertyDAO" representedClassName=".DoublePropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="doubleValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GeneratorDAO" representedClassName=".GeneratorDAO" parentEntity="ProcessorDAO" syncable="YES"/>
+    <entity name="ImageSetDAO" representedClassName=".ImageSetDAO" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="celestialPosition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CelestialPositionDAO" inverseName="set" inverseEntity="CelestialPositionDAO"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AstroImageDAO" inverseName="set" inverseEntity="AstroImageDAO"/>
+        <relationship name="inputForProcessors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="inputImageSet" inverseEntity="ProcessorDAO"/>
+        <relationship name="outputForProcessor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="outputImageSet" inverseEntity="ProcessorDAO"/>
+        <relationship name="subSets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="superSet" inverseEntity="ImageSetDAO"/>
+        <relationship name="superSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="subSets" inverseEntity="ImageSetDAO"/>
+    </entity>
+    <entity name="ImageTransformDAO" representedClassName=".ImageTransformDAO" syncable="YES">
+        <attribute name="rotation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="translationInX" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="translationInY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AstroImageDAO" inverseName="transformation" inverseEntity="AstroImageDAO"/>
+    </entity>
+    <entity name="IntegerPropertyDAO" representedClassName=".IntegerPropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="integerValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="PipelineDAO" representedClassName=".PipelineDAO" syncable="YES">
+        <relationship name="processors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="pipeline" inverseEntity="ProcessorDAO"/>
+    </entity>
+    <entity name="ProcessorDAO" representedClassName="ProcessorDAO" isAbstract="YES" syncable="YES">
+        <attribute name="plugin" optional="YES" attributeType="String"/>
+        <relationship name="input" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="output" inverseEntity="ProcessorDAO"/>
+        <relationship name="inputImageSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="inputForProcessors" inverseEntity="ImageSetDAO"/>
+        <relationship name="output" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="input" inverseEntity="ProcessorDAO"/>
+        <relationship name="outputImageSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageSetDAO" inverseName="outputForProcessor" inverseEntity="ImageSetDAO"/>
+        <relationship name="pipeline" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PipelineDAO" inverseName="processors" inverseEntity="PipelineDAO"/>
+        <relationship name="properties" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PropertyDAO" inverseName="processor" inverseEntity="PropertyDAO"/>
+    </entity>
+    <entity name="PropertyDAO" representedClassName=".PropertyDAO" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AstroImageDAO" inverseName="properties" inverseEntity="AstroImageDAO"/>
+        <relationship name="processor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProcessorDAO" inverseName="properties" inverseEntity="ProcessorDAO"/>
+    </entity>
+    <entity name="SerializerDAO" representedClassName=".SerializerDAO" parentEntity="ProcessorDAO" syncable="YES"/>
+    <entity name="StackedImageDAO" representedClassName=".StackedImageDAO" parentEntity="AstroImageDAO" syncable="YES">
+        <relationship name="stackedImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AstroImageDAO" inverseName="inStackedImage" inverseEntity="AstroImageDAO"/>
+    </entity>
+    <entity name="StringPropertyDAO" representedClassName=".StringPropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="stringValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TransformerDAO" representedClassName=".TransformerDAO" parentEntity="ProcessorDAO" syncable="YES"/>
+    <entity name="URIPropertyDAO" representedClassName=".URIPropertyDAO" parentEntity="PropertyDAO" syncable="YES">
+        <attribute name="uriValue" optional="YES" attributeType="URI"/>
+    </entity>
+    <elements>
+        <element name="AstroImageDAO" positionX="-27" positionY="54" width="128" height="313"/>
+        <element name="BooleanPropertyDAO" positionX="18" positionY="108" width="128" height="58"/>
+        <element name="CelestialPositionDAO" positionX="27" positionY="171" width="128" height="118"/>
+        <element name="DataPropertyDAO" positionX="9" positionY="90" width="128" height="58"/>
+        <element name="DatePropertyDAO" positionX="0" positionY="81" width="128" height="58"/>
+        <element name="DoublePropertyDAO" positionX="-18" positionY="63" width="128" height="58"/>
+        <element name="GeneratorDAO" positionX="-36" positionY="27" width="128" height="43"/>
+        <element name="ImageSetDAO" positionX="27" positionY="108" width="128" height="148"/>
+        <element name="ImageTransformDAO" positionX="9" positionY="117" width="128" height="103"/>
+        <element name="IntegerPropertyDAO" positionX="-27" positionY="54" width="128" height="58"/>
+        <element name="PipelineDAO" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="ProcessorDAO" positionX="-54" positionY="0" width="128" height="148"/>
+        <element name="PropertyDAO" positionX="0" positionY="72" width="128" height="88"/>
+        <element name="SerializerDAO" positionX="-18" positionY="45" width="128" height="43"/>
+        <element name="StackedImageDAO" positionX="-18" positionY="99" width="128" height="58"/>
+        <element name="StringPropertyDAO" positionX="-9" positionY="72" width="128" height="58"/>
+        <element name="TransformerDAO" positionX="-27" positionY="36" width="128" height="43"/>
+        <element name="URIPropertyDAO" positionX="18" positionY="99" width="128" height="58"/>
+    </elements>
+</model>

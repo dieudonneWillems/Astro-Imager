@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DirectoryNavigatorController">
+            <connections>
+                <outlet property="pathLabel" destination="opI-eO-a5S" id="7I4-C2-gs8"/>
+                <outlet property="view" destination="c22-O7-iKe" id="2MP-Zc-IXi"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JJY-DU-Y9L">
+                    <rect key="frame" x="18" y="18" width="195" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="ECT-Mn-z1G"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Image Folder" id="iXA-fg-hcN">
+                        <font key="font" metaFont="systemBold" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="opI-eO-a5S">
+                    <rect key="frame" x="20" y="4" width="193" height="11"/>
+                    <textFieldCell key="cell" controlSize="mini" selectable="YES" title="Not Set!" id="wdQ-Qw-Kp8">
+                        <font key="font" metaFont="menu" size="9"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-wc-lGJ">
+                    <rect key="frame" x="0.0" y="18" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="ueO-aC-DEO"/>
+                        <constraint firstAttribute="height" constant="18" id="y8y-9y-q7k"/>
+                    </constraints>
+                    <imageCell key="cell" controlSize="small" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSTouchBarFolderTemplate" id="ewW-hu-EVi"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="JJY-DU-Y9L" firstAttribute="leading" secondItem="6Q8-wc-lGJ" secondAttribute="trailing" constant="2" id="5CJ-ig-JFd"/>
+                <constraint firstItem="6Q8-wc-lGJ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="HpX-lj-Te5"/>
+                <constraint firstItem="6Q8-wc-lGJ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="-1" id="Mbo-EQ-H67"/>
+                <constraint firstItem="opI-eO-a5S" firstAttribute="top" secondItem="JJY-DU-Y9L" secondAttribute="bottom" constant="3" id="Q2l-Y6-bwu"/>
+                <constraint firstAttribute="trailing" secondItem="opI-eO-a5S" secondAttribute="trailing" id="Tlg-Kv-vHf"/>
+                <constraint firstItem="JJY-DU-Y9L" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="3" id="V7h-Tk-trq"/>
+                <constraint firstAttribute="trailing" secondItem="JJY-DU-Y9L" secondAttribute="trailing" id="XBd-Oe-i62"/>
+                <constraint firstAttribute="bottom" secondItem="opI-eO-a5S" secondAttribute="bottom" constant="4" id="mlg-Vg-eKV"/>
+                <constraint firstItem="opI-eO-a5S" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="22" id="qUi-sO-FXM"/>
+            </constraints>
+            <point key="canvasLocation" x="36.5" y="42.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSTouchBarFolderTemplate" width="22" height="30"/>
+    </resources>
+</document>
