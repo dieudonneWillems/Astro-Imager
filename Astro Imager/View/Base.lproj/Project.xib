@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="828" width="254" height="30"/>
                                         <subviews>
                                             <box appearanceType="aqua" verticalHuggingPriority="750" boxType="separator" id="n4O-go-hbh">
-                                                <rect key="frame" x="0.0" y="-2" width="254" height="5"/>
+                                                <rect key="frame" x="0.0" y="-1" width="254" height="5"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             </box>
                                         </subviews>
@@ -57,7 +57,7 @@
                                                     <tableColumns>
                                                         <tableColumn width="251" minWidth="16" maxWidth="1000" id="JFH-En-2jh">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                                <font key="font" metaFont="menu" size="11"/>
+                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -157,15 +157,67 @@
                                     <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3SV-PK-ENU">
                                         <rect key="frame" x="0.0" y="0.0" width="1115" height="858"/>
                                         <subviews>
-                                            <customView fixedFrame="YES" id="Rmk-VH-c7J">
+                                            <customView id="Rmk-VH-c7J">
                                                 <rect key="frame" x="0.0" y="0.0" width="819" height="858"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <splitView arrangesAllSubviews="NO" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="33I-UP-OTo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="819" height="858"/>
+                                                        <subviews>
+                                                            <customView fixedFrame="YES" id="BNp-oa-Kd1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="819" height="655"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </customView>
+                                                            <customView id="meR-Cr-j93">
+                                                                <rect key="frame" x="0.0" y="656" width="819" height="202"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="CnI-l4-kvg"/>
+                                                                </constraints>
+                                                            </customView>
+                                                        </subviews>
+                                                        <holdingPriorities>
+                                                            <real value="250"/>
+                                                            <real value="250"/>
+                                                        </holdingPriorities>
+                                                    </splitView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="33I-UP-OTo" firstAttribute="top" secondItem="Rmk-VH-c7J" secondAttribute="top" id="7nu-Tf-ueB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="33I-UP-OTo" secondAttribute="bottom" id="CmI-Oy-3S8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="33I-UP-OTo" secondAttribute="trailing" id="oEB-e8-H0z"/>
+                                                    <constraint firstItem="33I-UP-OTo" firstAttribute="leading" secondItem="Rmk-VH-c7J" secondAttribute="leading" id="qGF-gK-JHw"/>
+                                                </constraints>
                                             </customView>
                                             <customView id="4bV-eO-huw">
                                                 <rect key="frame" x="820" y="0.0" width="295" height="858"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="A5N-F9-Xm2">
+                                                        <rect key="frame" x="0.0" y="828" width="295" height="30"/>
+                                                        <subviews>
+                                                            <box appearanceType="aqua" verticalHuggingPriority="750" boxType="separator" id="LjR-YM-Gec">
+                                                                <rect key="frame" x="0.0" y="-1" width="295" height="5"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            </box>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="eDf-DA-JXD"/>
+                                                        </constraints>
+                                                    </customView>
+                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Egb-Ni-l9Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="828"/>
+                                                    </customView>
+                                                </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="A5N-F9-Xm2" secondAttribute="trailing" id="3E7-Qe-Z2a"/>
+                                                    <constraint firstItem="Egb-Ni-l9Z" firstAttribute="leading" secondItem="4bV-eO-huw" secondAttribute="leading" id="3SX-XB-lrc"/>
+                                                    <constraint firstItem="A5N-F9-Xm2" firstAttribute="leading" secondItem="4bV-eO-huw" secondAttribute="leading" id="MDt-xL-dry"/>
+                                                    <constraint firstItem="A5N-F9-Xm2" firstAttribute="top" secondItem="4bV-eO-huw" secondAttribute="top" id="RW9-M8-IDG"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="fSv-t1-qbG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Egb-Ni-l9Z" secondAttribute="bottom" id="gYh-Mu-nOg"/>
+                                                    <constraint firstItem="Egb-Ni-l9Z" firstAttribute="top" secondItem="A5N-F9-Xm2" secondAttribute="bottom" id="nod-Vs-aOd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Egb-Ni-l9Z" secondAttribute="trailing" id="vKd-QM-frh"/>
                                                 </constraints>
                                             </customView>
                                         </subviews>
