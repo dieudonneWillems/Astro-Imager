@@ -17,14 +17,14 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="752" height="596"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" misplaced="YES" id="gIp-Ho-8D9">
-                <rect key="frame" x="0.0" y="0.0" width="752" height="563"/>
+                <rect key="frame" x="0.0" y="0.0" width="752" height="596"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <splitView misplaced="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-Mw-AHR">
-                        <rect key="frame" x="0.0" y="0.0" width="752" height="563"/>
+                        <rect key="frame" x="0.0" y="33" width="752" height="563"/>
                         <subviews>
                             <customView misplaced="YES" id="q0c-KL-t1a">
                                 <rect key="frame" x="0.0" y="0.0" width="218" height="563"/>
@@ -33,7 +33,7 @@
                                     <visualEffectView misplaced="YES" blendingMode="behindWindow" material="sidebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="KB5-bO-Gco">
                                         <rect key="frame" x="0.0" y="530" width="218" height="33"/>
                                         <subviews>
-                                            <box focusRingType="none" appearanceType="darkAqua" verticalHuggingPriority="750" misplaced="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-hj-BAt">
+                                            <box focusRingType="none" verticalHuggingPriority="750" misplaced="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-hj-BAt">
                                                 <rect key="frame" x="0.0" y="0.0" width="218" height="5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="sei-5P-CBq"/>
@@ -58,13 +58,13 @@
                                             <constraint firstAttribute="height" constant="27" id="nu1-ym-cjX"/>
                                         </constraints>
                                     </visualEffectView>
-                                    <scrollView misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-8Q-RCG">
+                                    <scrollView misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-8Q-RCG">
                                         <rect key="frame" x="0.0" y="-1" width="218" height="534"/>
                                         <clipView key="contentView" drawsBackground="NO" id="eCw-C2-Qad">
                                             <rect key="frame" x="0.0" y="0.0" width="218" height="534"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="Thv-SF-j24" id="kG3-8S-xea">
+                                                <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="Thv-SF-j24" id="kG3-8S-xea">
                                                     <rect key="frame" x="0.0" y="0.0" width="218" height="534"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <size key="intercellSpacing" width="3" height="0.0"/>
