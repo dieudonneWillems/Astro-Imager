@@ -7,45 +7,65 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Project" customModule="Astro_Imager" customModuleProvider="target">
             <connections>
+                <outlet property="navigationController" destination="u3E-yr-a9e" id="BwF-rp-bZA"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="xOd-HO-29H" userLabel="Window">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="xOd-HO-29H" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="752" height="596"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" misplaced="YES" id="gIp-Ho-8D9">
-                <rect key="frame" x="0.0" y="0.0" width="752" height="592"/>
+                <rect key="frame" x="0.0" y="0.0" width="752" height="563"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <splitView arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-Mw-AHR">
-                        <rect key="frame" x="0.0" y="0.0" width="752" height="585"/>
+                    <splitView misplaced="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boq-Mw-AHR">
+                        <rect key="frame" x="0.0" y="0.0" width="752" height="563"/>
                         <subviews>
                             <customView misplaced="YES" id="q0c-KL-t1a">
-                                <rect key="frame" x="0.0" y="0.0" width="218" height="585"/>
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="563"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <box focusRingType="none" appearanceType="darkAqua" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-hj-BAt">
-                                        <rect key="frame" x="0.0" y="553" width="218" height="5"/>
-                                    </box>
-                                    <visualEffectView blendingMode="behindWindow" material="sidebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="KB5-bO-Gco">
-                                        <rect key="frame" x="0.0" y="557" width="218" height="28"/>
+                                    <visualEffectView misplaced="YES" blendingMode="behindWindow" material="sidebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="KB5-bO-Gco">
+                                        <rect key="frame" x="0.0" y="530" width="218" height="33"/>
+                                        <subviews>
+                                            <box focusRingType="none" appearanceType="darkAqua" verticalHuggingPriority="750" misplaced="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-hj-BAt">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="sei-5P-CBq"/>
+                                                </constraints>
+                                            </box>
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-Mc-ltz">
+                                                <rect key="frame" x="8" y="13" width="18" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSTouchBarFolderTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7sJ-Sy-eGE">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="showPipelineNavigator:" target="-2" id="rBQ-qA-V4f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="nu1-ym-cjX"/>
+                                            <constraint firstItem="SBv-hj-BAt" firstAttribute="leading" secondItem="KB5-bO-Gco" secondAttribute="leading" id="KZc-fi-fTG"/>
+                                            <constraint firstAttribute="bottom" secondItem="SBv-hj-BAt" secondAttribute="bottom" constant="27" id="Nqa-Ab-9Tq"/>
+                                            <constraint firstAttribute="trailing" secondItem="SBv-hj-BAt" secondAttribute="trailing" id="m7g-ph-ARx"/>
+                                            <constraint firstAttribute="height" constant="27" id="nu1-ym-cjX"/>
                                         </constraints>
                                     </visualEffectView>
-                                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-8Q-RCG">
-                                        <rect key="frame" x="0.0" y="-1" width="218" height="556"/>
+                                    <scrollView misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6A5-8Q-RCG">
+                                        <rect key="frame" x="0.0" y="-1" width="218" height="534"/>
                                         <clipView key="contentView" drawsBackground="NO" id="eCw-C2-Qad">
-                                            <rect key="frame" x="0.0" y="0.0" width="218" height="556"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="218" height="534"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="Thv-SF-j24" id="kG3-8S-xea">
-                                                    <rect key="frame" x="0.0" y="0.0" width="218" height="556"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="218" height="534"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <size key="intercellSpacing" width="3" height="0.0"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -123,6 +143,10 @@
                                                             </prototypeCellViews>
                                                         </tableColumn>
                                                     </tableColumns>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="u3E-yr-a9e" id="Lwb-aD-qBB"/>
+                                                        <outlet property="delegate" destination="u3E-yr-a9e" id="KnR-Tr-JFW"/>
+                                                    </connections>
                                                 </outlineView>
                                             </subviews>
                                             <nil key="backgroundColor"/>
@@ -138,31 +162,29 @@
                                     </scrollView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6A5-8Q-RCG" firstAttribute="trailing" secondItem="SBv-hj-BAt" secondAttribute="trailing" id="DLO-3U-fd4"/>
-                                    <constraint firstItem="6A5-8Q-RCG" firstAttribute="leading" secondItem="SBv-hj-BAt" secondAttribute="leading" id="F8d-yA-nsw"/>
-                                    <constraint firstItem="SBv-hj-BAt" firstAttribute="top" secondItem="KB5-bO-Gco" secondAttribute="bottom" id="Gqu-Uq-JJD"/>
-                                    <constraint firstAttribute="bottom" secondItem="6A5-8Q-RCG" secondAttribute="bottom" id="TBH-wJ-g8a"/>
+                                    <constraint firstItem="6A5-8Q-RCG" firstAttribute="leading" secondItem="q0c-KL-t1a" secondAttribute="leading" id="6LT-8q-uYj"/>
+                                    <constraint firstAttribute="trailing" secondItem="KB5-bO-Gco" secondAttribute="trailing" id="DG6-Fd-jeM"/>
+                                    <constraint firstAttribute="bottom" secondItem="6A5-8Q-RCG" secondAttribute="bottom" constant="-1" id="TBH-wJ-g8a"/>
                                     <constraint firstItem="KB5-bO-Gco" firstAttribute="leading" secondItem="q0c-KL-t1a" secondAttribute="leading" id="ZHE-P3-s4s"/>
                                     <constraint firstItem="KB5-bO-Gco" firstAttribute="top" secondItem="q0c-KL-t1a" secondAttribute="top" id="aDW-ac-H3c"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="bO6-sx-yb5"/>
-                                    <constraint firstItem="KB5-bO-Gco" firstAttribute="leading" secondItem="SBv-hj-BAt" secondAttribute="leading" id="bfp-K8-hmS"/>
+                                    <constraint firstAttribute="trailing" secondItem="6A5-8Q-RCG" secondAttribute="trailing" id="hms-hM-0hv"/>
                                     <constraint firstItem="6A5-8Q-RCG" firstAttribute="top" secondItem="KB5-bO-Gco" secondAttribute="bottom" constant="1" id="jZO-dw-RlA"/>
-                                    <constraint firstItem="KB5-bO-Gco" firstAttribute="trailing" secondItem="SBv-hj-BAt" secondAttribute="trailing" id="w9K-FY-rLR"/>
                                 </constraints>
                             </customView>
                             <customView misplaced="YES" id="Dw6-O5-H3l">
-                                <rect key="frame" x="219" y="0.0" width="533" height="585"/>
+                                <rect key="frame" x="219" y="0.0" width="533" height="563"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <splitView misplaced="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0Z-ba-gXN">
-                                        <rect key="frame" x="1" y="-5" width="532" height="589"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="533" height="563"/>
                                         <subviews>
                                             <customView fixedFrame="YES" id="sBt-RX-m7g">
-                                                <rect key="frame" x="0.0" y="0.0" width="319" height="589"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="563"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </customView>
                                             <customView misplaced="YES" id="D0M-5X-sRK">
-                                                <rect key="frame" x="320" y="0.0" width="212" height="589"/>
+                                                <rect key="frame" x="321" y="0.0" width="212" height="563"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="VLy-MY-fkp"/>
@@ -198,30 +220,38 @@
             </view>
             <toolbar key="toolbar" implicitIdentifier="4F20FB18-78C9-40AC-8180-A59041C80A89" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="ONn-mi-UgY">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="D06EDEE2-F604-4373-B3C2-F7E48CFC7160" label="Run" paletteLabel="Run Pipeline" tag="1" image="play.rectangle" id="1Il-1O-DeH">
-                        <size key="minSize" width="30" height="17"/>
-                        <size key="maxSize" width="30" height="17"/>
-                        <connections>
-                            <action selector="runPipeline:" target="-2" id="Wut-VI-2kH"/>
-                        </connections>
+                    <toolbarItem implicitItemIdentifier="C8D145A7-1208-42C1-B21E-A0B1DB49D5B7" label="Run" paletteLabel="Run Pipeline" image="NSRefreshTemplate" id="cTf-xD-me9">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="52" height="43"/>
+                        <size key="maxSize" width="52" height="43"/>
+                        <button key="view" verticalHuggingPriority="750" id="xIG-sa-bEM">
+                            <rect key="frame" x="16" y="14" width="40" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ESf-Vf-Rzv">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="jxN-OP-d7s"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="wbb-Qd-sXG"/>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
+                    <toolbarItem reference="cTf-xD-me9"/>
                     <toolbarItem reference="wbb-Qd-sXG"/>
-                    <toolbarItem reference="1Il-1O-DeH"/>
                     <toolbarItem reference="wbb-Qd-sXG"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
-            <point key="canvasLocation" x="601" y="-533"/>
+            <point key="canvasLocation" x="601" y="-533.5"/>
         </window>
+        <customObject id="u3E-yr-a9e" customClass="NavigationController" customModule="Astro_Imager" customModuleProvider="target"/>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
-        <image name="play.rectangle" width="20" height="16"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSTouchBarFolderTemplate" width="22" height="30"/>
     </resources>
 </document>

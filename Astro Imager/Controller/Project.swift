@@ -15,8 +15,36 @@ class Project: NSPersistentDocument {
         // Add your subclass-specific initialization here.
     }
     
+    // MARK: - Outlets
+    @IBOutlet var navigationController: NavigationController!
+    
+    // MARK: - Actions
+    
     @IBAction func runPipeline(_ sender: Any) {
-        Swift.print("Start Pipeline...")
+        Swift.print(">> Start Pipeline...")
+    }
+    
+    @IBAction func insertProcessor(_ sender: Any) {
+    }
+    
+    @IBAction func showPipelineNavigator(_ sender: Any) {
+        navigationController.mode = .pipeline
+    }
+    
+    @IBAction func showDeviceNavigator(_ sender: Any) {
+        navigationController.mode = .devices
+    }
+    
+    @IBAction func showImageNavigator(_ sender: Any) {
+        navigationController.mode = .images
+    }
+    
+    @IBAction func showObjectNavigator(_ sender: Any) {
+        navigationController.mode = .objects
+    }
+    
+    @IBAction func showProcessNavigator(_ sender: Any) {
+        navigationController.mode = .processes
     }
     
     override class var autosavesInPlace: Bool {

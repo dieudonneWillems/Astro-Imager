@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "a6d5a5395a402a208a10228dfaf0c8fc"
+build_time: [1581883198, 252774000]
+inputs:
+  "/Users/wonco/Development/Astro Imager/AstroImager/Pipeline /Pipeline.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Viewer/Viewer.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Pipeline /Transformer.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Viewer/ImageViewerLayer.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Images/ImageSet.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Pipeline /Serializer.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Pipeline /Processor.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Viewer/ImageViewer.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Images/AstroImage.swift": [9223372036, 854775807]
+  "/Users/wonco/Development/Astro Imager/AstroImager/Pipeline /Generator.swift": [9223372036, 854775807]

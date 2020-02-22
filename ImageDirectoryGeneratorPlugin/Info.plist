@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 lapsedpacifist. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>ImageDirectoryGenerator</string>
+	<string>ImageDirectoryGeneratorPlugin</string>
 </dict>
 </plist>

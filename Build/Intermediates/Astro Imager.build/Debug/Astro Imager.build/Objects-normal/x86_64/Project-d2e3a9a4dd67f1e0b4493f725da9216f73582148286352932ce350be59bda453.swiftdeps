@@ -1,0 +1,296 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Project"
+provides-nominal:
+- "12Astro_Imager7ProjectC"
+provides-member:
+- ["12Astro_Imager7ProjectC", ""]
+provides-dynamic-lookup:
+- "autosavesInPlace"
+- "insertProcessor"
+- "navigationController"
+- "runPipeline"
+- "showDeviceNavigator"
+- "showImageNavigator"
+- "showObjectNavigator"
+- "showPipelineNavigator"
+- "showProcessNavigator"
+- "windowNibName"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "NSNib"
+- "NSPersistentDocument"
+- "NavigationController"
+- "Project"
+- !private "StringLiteralType"
+- !private "Swift"
+depends-member:
+- !private ["s7CVarArgP", "NSNib"]
+- ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "Swift"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mode"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "NSNib"]
+- ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "Swift"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mode"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s17CustomReflectableP", "mode"]
+- !private ["s23CustomStringConvertibleP", "NSNib"]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Swift"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mode"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["Se", "mode"]
+- !private ["SE", "mode"]
+- !private ["SQ", "NSNib"]
+- ["SQ", "Name"]
+- !private ["SQ", "Swift"]
+- ["SQ", ""]
+- !private ["SQ", "devices"]
+- !private ["SQ", "images"]
+- !private ["SQ", "init"]
+- !private ["SQ", "mode"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "objects"]
+- !private ["SQ", "pipeline"]
+- !private ["SQ", "processes"]
+- !private ["s23ExpressibleByNilLiteralP", "mode"]
+- !private ["SH", "NSNib"]
+- ["SH", "Name"]
+- !private ["SH", "Swift"]
+- ["SH", ""]
+- !private ["SH", "devices"]
+- !private ["SH", "images"]
+- !private ["SH", "init"]
+- !private ["SH", "mode"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "objects"]
+- !private ["SH", "pipeline"]
+- !private ["SH", "processes"]
+- ["So8NSCodingP", "Name"]
+- !private ["So28NSControlTextEditingDelegateP", "mode"]
+- ["So10NSDocumentC", "Bool"]
+- ["So10NSDocumentC", "NSNib"]
+- ["So10NSDocumentC", "NavigationController"]
+- !private ["So10NSDocumentC", "Swift"]
+- ["So10NSDocumentC", "autosavesInPlace"]
+- ["So10NSDocumentC", "init"]
+- ["So10NSDocumentC", "insertProcessor"]
+- ["So10NSDocumentC", "navigationController"]
+- ["So10NSDocumentC", "runPipeline"]
+- ["So10NSDocumentC", "showDeviceNavigator"]
+- ["So10NSDocumentC", "showImageNavigator"]
+- ["So10NSDocumentC", "showObjectNavigator"]
+- ["So10NSDocumentC", "showPipelineNavigator"]
+- ["So10NSDocumentC", "showProcessNavigator"]
+- ["So10NSDocumentC", "windowNibName"]
+- !private ["So20NSEditorRegistrationP", "NSNib"]
+- !private ["So20NSEditorRegistrationP", "Swift"]
+- ["So20NSEditorRegistrationP", ""]
+- !private ["So20NSEditorRegistrationP", "init"]
+- !private ["So20NSEditorRegistrationP", "navigationController"]
+- !private ["So15NSFilePresenterP", "NSNib"]
+- !private ["So15NSFilePresenterP", "Swift"]
+- ["So15NSFilePresenterP", ""]
+- !private ["So15NSFilePresenterP", "init"]
+- !private ["So15NSFilePresenterP", "navigationController"]
+- !private ["So20NSMenuItemValidationP", "NSNib"]
+- !private ["So20NSMenuItemValidationP", "Swift"]
+- ["So20NSMenuItemValidationP", ""]
+- !private ["So20NSMenuItemValidationP", "init"]
+- !private ["So20NSMenuItemValidationP", "navigationController"]
+- ["So5NSNibC", "Name"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "NSNib"]
+- ["So8NSObjectC", "Name"]
+- ["So8NSObjectC", "NavigationController"]
+- !private ["So8NSObjectC", "Swift"]
+- ["So8NSObjectC", "autosavesInPlace"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "insertProcessor"]
+- !private ["So8NSObjectC", "mode"]
+- ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "runPipeline"]
+- ["So8NSObjectC", "showDeviceNavigator"]
+- ["So8NSObjectC", "showImageNavigator"]
+- ["So8NSObjectC", "showObjectNavigator"]
+- ["So8NSObjectC", "showPipelineNavigator"]
+- ["So8NSObjectC", "showProcessNavigator"]
+- ["So8NSObjectC", "windowNibName"]
+- !private ["So8NSObjectP", "NSNib"]
+- ["So8NSObjectP", "Name"]
+- !private ["So8NSObjectP", "Swift"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "mode"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So23NSOutlineViewDataSourceP", "mode"]
+- !private ["So21NSOutlineViewDelegateP", "mode"]
+- ["So20NSPersistentDocumentC", "Bool"]
+- ["So20NSPersistentDocumentC", "NSNib"]
+- ["So20NSPersistentDocumentC", "NavigationController"]
+- !private ["So20NSPersistentDocumentC", "Swift"]
+- ["So20NSPersistentDocumentC", ""]
+- ["So20NSPersistentDocumentC", "autosavesInPlace"]
+- ["So20NSPersistentDocumentC", "init"]
+- ["So20NSPersistentDocumentC", "insertProcessor"]
+- ["So20NSPersistentDocumentC", "navigationController"]
+- ["So20NSPersistentDocumentC", "runPipeline"]
+- ["So20NSPersistentDocumentC", "showDeviceNavigator"]
+- ["So20NSPersistentDocumentC", "showImageNavigator"]
+- ["So20NSPersistentDocumentC", "showObjectNavigator"]
+- ["So20NSPersistentDocumentC", "showPipelineNavigator"]
+- ["So20NSPersistentDocumentC", "showProcessNavigator"]
+- ["So20NSPersistentDocumentC", "windowNibName"]
+- !private ["So23NSUserActivityRestoringP", "NSNib"]
+- !private ["So23NSUserActivityRestoringP", "Swift"]
+- ["So23NSUserActivityRestoringP", ""]
+- !private ["So23NSUserActivityRestoringP", "init"]
+- !private ["So23NSUserActivityRestoringP", "navigationController"]
+- !private ["So26NSUserInterfaceValidationsP", "NSNib"]
+- !private ["So26NSUserInterfaceValidationsP", "Swift"]
+- ["So26NSUserInterfaceValidationsP", ""]
+- !private ["So26NSUserInterfaceValidationsP", "init"]
+- !private ["So26NSUserInterfaceValidationsP", "navigationController"]
+- !private ["12Astro_Imager20NavigationControllerC", "mode"]
+- !private ["12Astro_Imager14NavigationModeO", "devices"]
+- !private ["12Astro_Imager14NavigationModeO", "images"]
+- !private ["12Astro_Imager14NavigationModeO", "objects"]
+- !private ["12Astro_Imager14NavigationModeO", "pipeline"]
+- !private ["12Astro_Imager14NavigationModeO", "processes"]
+- !private ["Sq", "mode"]
+- ["12Astro_Imager7ProjectC", "Bool"]
+- ["12Astro_Imager7ProjectC", "NSNib"]
+- ["12Astro_Imager7ProjectC", "NavigationController"]
+- !private ["12Astro_Imager7ProjectC", "Swift"]
+- ["12Astro_Imager7ProjectC", "autosavesInPlace"]
+- ["12Astro_Imager7ProjectC", "deinit"]
+- ["12Astro_Imager7ProjectC", "init"]
+- ["12Astro_Imager7ProjectC", "insertProcessor"]
+- ["12Astro_Imager7ProjectC", "navigationController"]
+- ["12Astro_Imager7ProjectC", "runPipeline"]
+- ["12Astro_Imager7ProjectC", "showDeviceNavigator"]
+- ["12Astro_Imager7ProjectC", "showImageNavigator"]
+- ["12Astro_Imager7ProjectC", "showObjectNavigator"]
+- ["12Astro_Imager7ProjectC", "showPipelineNavigator"]
+- ["12Astro_Imager7ProjectC", "showProcessNavigator"]
+- ["12Astro_Imager7ProjectC", "windowNibName"]
+- !private ["SY", "devices"]
+- !private ["SY", "images"]
+- !private ["SY", "objects"]
+- !private ["SY", "pipeline"]
+- !private ["SY", "processes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSNib"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Swift"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSNib"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Name"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Swift"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mode"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["s21_ObjectiveCBridgeableP", "mode"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- "So8NSCodingP"
+- !private "So28NSControlTextEditingDelegateP"
+- "So10NSDocumentC"
+- "So20NSEditorRegistrationP"
+- "So15NSFilePresenterP"
+- "So20NSMenuItemValidationP"
+- "So5NSNibC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So23NSOutlineViewDataSourceP"
+- !private "So21NSOutlineViewDelegateP"
+- "So20NSPersistentDocumentC"
+- "So23NSUserActivityRestoringP"
+- "So26NSUserInterfaceValidationsP"
+- !private "12Astro_Imager20NavigationControllerC"
+- !private "12Astro_Imager14NavigationModeO"
+- !private "Sq"
+- "12Astro_Imager7ProjectC"
+- !private "SY"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImagerPlugin.framework/Modules/AstroImagerPlugin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImager.framework/Modules/AstroImager.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/AstroImagerPlugin/AstroImagerPlugin.h"
+- "/Users/wonco/Development/Astro Imager/AstroImager/AstroImager.h"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImagerPlugin.framework/Versions/A/Headers/AstroImagerPlugin-Swift.h"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImager.framework/Versions/A/Headers/AstroImager-Swift.h"
+- "/Users/wonco/Development/Astro Imager/Build/Intermediates/Astro Imager.build/Debug/AstroImagerPlugin.build/module.modulemap"
+- "/Users/wonco/Development/Astro Imager/Build/Intermediates/Astro Imager.build/Debug/AstroImager.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "80437182e7ee81e42dd4d119bf06ccb4"

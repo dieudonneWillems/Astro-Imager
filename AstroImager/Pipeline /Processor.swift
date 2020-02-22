@@ -11,6 +11,10 @@ import AppKit
 
 public protocol Processor {
     
+    var navigatorCellView : NSView? {get}
+    
+    var inspectorView : NSView? {get}
+    
     var progress: Float {get}
     
     func configure(with properties: [String: Any])

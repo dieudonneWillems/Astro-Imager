@@ -1,0 +1,432 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NavigationMode"
+- "NavigationController"
+provides-nominal:
+- "12Astro_Imager14NavigationModeO"
+- "12Astro_Imager20NavigationControllerC"
+provides-member:
+- ["12Astro_Imager14NavigationModeO", ""]
+- ["12Astro_Imager20NavigationControllerC", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "showDeviceNavigator"
+- "showImageNavigator"
+- "showObjectNavigator"
+- "showPipelineNavigator"
+- "showProcessNavigator"
+depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "NSObject"
+- "NSOutlineViewDataSource"
+- "NSOutlineViewDelegate"
+- "NavigationController"
+- "NavigationMode"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "print"
+- !private "~="
+depends-member:
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "control"]
+- ["s7CVarArgP", "controlTextDidBeginEditing"]
+- ["s7CVarArgP", "controlTextDidChange"]
+- ["s7CVarArgP", "controlTextDidEndEditing"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mode"]
+- ["s7CVarArgP", "outlineView"]
+- ["s7CVarArgP", "outlineViewColumnDidMove"]
+- ["s7CVarArgP", "outlineViewColumnDidResize"]
+- ["s7CVarArgP", "outlineViewItemDidCollapse"]
+- ["s7CVarArgP", "outlineViewItemDidExpand"]
+- ["s7CVarArgP", "outlineViewItemWillCollapse"]
+- ["s7CVarArgP", "outlineViewItemWillExpand"]
+- ["s7CVarArgP", "outlineViewSelectionDidChange"]
+- ["s7CVarArgP", "outlineViewSelectionIsChanging"]
+- !private ["s7CVarArgP", "print"]
+- ["s7CVarArgP", "selectionShouldChange"]
+- ["s7CVarArgP", "selectionShouldChangeInOutlineView"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "control"]
+- ["s28CustomDebugStringConvertibleP", "controlTextDidBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "controlTextDidChange"]
+- ["s28CustomDebugStringConvertibleP", "controlTextDidEndEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mode"]
+- ["s28CustomDebugStringConvertibleP", "outlineView"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewColumnDidMove"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewColumnDidResize"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewItemDidCollapse"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewItemDidExpand"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewItemWillCollapse"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewItemWillExpand"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewSelectionDidChange"]
+- ["s28CustomDebugStringConvertibleP", "outlineViewSelectionIsChanging"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- ["s28CustomDebugStringConvertibleP", "selectionShouldChange"]
+- ["s28CustomDebugStringConvertibleP", "selectionShouldChangeInOutlineView"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "control"]
+- ["s23CustomStringConvertibleP", "controlTextDidBeginEditing"]
+- ["s23CustomStringConvertibleP", "controlTextDidChange"]
+- ["s23CustomStringConvertibleP", "controlTextDidEndEditing"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mode"]
+- ["s23CustomStringConvertibleP", "outlineView"]
+- ["s23CustomStringConvertibleP", "outlineViewColumnDidMove"]
+- ["s23CustomStringConvertibleP", "outlineViewColumnDidResize"]
+- ["s23CustomStringConvertibleP", "outlineViewItemDidCollapse"]
+- ["s23CustomStringConvertibleP", "outlineViewItemDidExpand"]
+- ["s23CustomStringConvertibleP", "outlineViewItemWillCollapse"]
+- ["s23CustomStringConvertibleP", "outlineViewItemWillExpand"]
+- ["s23CustomStringConvertibleP", "outlineViewSelectionDidChange"]
+- ["s23CustomStringConvertibleP", "outlineViewSelectionIsChanging"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- ["s23CustomStringConvertibleP", "selectionShouldChange"]
+- ["s23CustomStringConvertibleP", "selectionShouldChangeInOutlineView"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "control"]
+- ["SQ", "controlTextDidBeginEditing"]
+- ["SQ", "controlTextDidChange"]
+- ["SQ", "controlTextDidEndEditing"]
+- !private ["SQ", "devices"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "images"]
+- ["SQ", "init"]
+- !private ["SQ", "mode"]
+- !private ["SQ", "objects"]
+- ["SQ", "outlineView"]
+- ["SQ", "outlineViewColumnDidMove"]
+- ["SQ", "outlineViewColumnDidResize"]
+- ["SQ", "outlineViewItemDidCollapse"]
+- ["SQ", "outlineViewItemDidExpand"]
+- ["SQ", "outlineViewItemWillCollapse"]
+- ["SQ", "outlineViewItemWillExpand"]
+- ["SQ", "outlineViewSelectionDidChange"]
+- ["SQ", "outlineViewSelectionIsChanging"]
+- ["SQ", "pipeline"]
+- !private ["SQ", "print"]
+- !private ["SQ", "processes"]
+- ["SQ", "rawValue"]
+- ["SQ", "selectionShouldChange"]
+- ["SQ", "selectionShouldChangeInOutlineView"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "control"]
+- ["SH", "controlTextDidBeginEditing"]
+- ["SH", "controlTextDidChange"]
+- ["SH", "controlTextDidEndEditing"]
+- !private ["SH", "devices"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "images"]
+- ["SH", "init"]
+- !private ["SH", "mode"]
+- !private ["SH", "objects"]
+- ["SH", "outlineView"]
+- ["SH", "outlineViewColumnDidMove"]
+- ["SH", "outlineViewColumnDidResize"]
+- ["SH", "outlineViewItemDidCollapse"]
+- ["SH", "outlineViewItemDidExpand"]
+- ["SH", "outlineViewItemWillCollapse"]
+- ["SH", "outlineViewItemWillExpand"]
+- ["SH", "outlineViewSelectionDidChange"]
+- ["SH", "outlineViewSelectionIsChanging"]
+- ["SH", "pipeline"]
+- !private ["SH", "print"]
+- !private ["SH", "processes"]
+- ["SH", "rawValue"]
+- ["SH", "selectionShouldChange"]
+- ["SH", "selectionShouldChangeInOutlineView"]
+- ["So28NSControlTextEditingDelegateP", ""]
+- ["So28NSControlTextEditingDelegateP", "control"]
+- ["So28NSControlTextEditingDelegateP", "controlTextDidBeginEditing"]
+- ["So28NSControlTextEditingDelegateP", "controlTextDidChange"]
+- ["So28NSControlTextEditingDelegateP", "controlTextDidEndEditing"]
+- !private ["So28NSControlTextEditingDelegateP", "mode"]
+- ["So28NSControlTextEditingDelegateP", "outlineView"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewColumnDidMove"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewColumnDidResize"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewItemDidCollapse"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewItemDidExpand"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewItemWillCollapse"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewItemWillExpand"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewSelectionDidChange"]
+- ["So28NSControlTextEditingDelegateP", "outlineViewSelectionIsChanging"]
+- !private ["So28NSControlTextEditingDelegateP", "print"]
+- ["So28NSControlTextEditingDelegateP", "selectionShouldChange"]
+- ["So28NSControlTextEditingDelegateP", "selectionShouldChangeInOutlineView"]
+- ["So8NSObjectC", "NavigationMode"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "awakeFromNib"]
+- ["So8NSObjectC", "control"]
+- ["So8NSObjectC", "controlTextDidBeginEditing"]
+- ["So8NSObjectC", "controlTextDidChange"]
+- ["So8NSObjectC", "controlTextDidEndEditing"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mode"]
+- ["So8NSObjectC", "outlineView"]
+- ["So8NSObjectC", "outlineViewColumnDidMove"]
+- ["So8NSObjectC", "outlineViewColumnDidResize"]
+- ["So8NSObjectC", "outlineViewItemDidCollapse"]
+- ["So8NSObjectC", "outlineViewItemDidExpand"]
+- ["So8NSObjectC", "outlineViewItemWillCollapse"]
+- ["So8NSObjectC", "outlineViewItemWillExpand"]
+- ["So8NSObjectC", "outlineViewSelectionDidChange"]
+- ["So8NSObjectC", "outlineViewSelectionIsChanging"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "selectionShouldChange"]
+- ["So8NSObjectC", "selectionShouldChangeInOutlineView"]
+- ["So8NSObjectC", "showDeviceNavigator"]
+- ["So8NSObjectC", "showImageNavigator"]
+- ["So8NSObjectC", "showObjectNavigator"]
+- ["So8NSObjectC", "showPipelineNavigator"]
+- ["So8NSObjectC", "showProcessNavigator"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "control"]
+- ["So8NSObjectP", "controlTextDidBeginEditing"]
+- ["So8NSObjectP", "controlTextDidChange"]
+- ["So8NSObjectP", "controlTextDidEndEditing"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "mode"]
+- ["So8NSObjectP", "outlineView"]
+- ["So8NSObjectP", "outlineViewColumnDidMove"]
+- ["So8NSObjectP", "outlineViewColumnDidResize"]
+- ["So8NSObjectP", "outlineViewItemDidCollapse"]
+- ["So8NSObjectP", "outlineViewItemDidExpand"]
+- ["So8NSObjectP", "outlineViewItemWillCollapse"]
+- ["So8NSObjectP", "outlineViewItemWillExpand"]
+- ["So8NSObjectP", "outlineViewSelectionDidChange"]
+- ["So8NSObjectP", "outlineViewSelectionIsChanging"]
+- !private ["So8NSObjectP", "print"]
+- ["So8NSObjectP", "selectionShouldChange"]
+- ["So8NSObjectP", "selectionShouldChangeInOutlineView"]
+- ["So23NSOutlineViewDataSourceP", ""]
+- ["So23NSOutlineViewDataSourceP", "control"]
+- ["So23NSOutlineViewDataSourceP", "controlTextDidBeginEditing"]
+- ["So23NSOutlineViewDataSourceP", "controlTextDidChange"]
+- ["So23NSOutlineViewDataSourceP", "controlTextDidEndEditing"]
+- !private ["So23NSOutlineViewDataSourceP", "mode"]
+- ["So23NSOutlineViewDataSourceP", "outlineView"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewColumnDidMove"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewColumnDidResize"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewItemDidCollapse"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewItemDidExpand"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewItemWillCollapse"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewItemWillExpand"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewSelectionDidChange"]
+- ["So23NSOutlineViewDataSourceP", "outlineViewSelectionIsChanging"]
+- !private ["So23NSOutlineViewDataSourceP", "print"]
+- ["So23NSOutlineViewDataSourceP", "selectionShouldChange"]
+- ["So23NSOutlineViewDataSourceP", "selectionShouldChangeInOutlineView"]
+- ["So21NSOutlineViewDelegateP", ""]
+- ["So21NSOutlineViewDelegateP", "control"]
+- ["So21NSOutlineViewDelegateP", "controlTextDidBeginEditing"]
+- ["So21NSOutlineViewDelegateP", "controlTextDidChange"]
+- ["So21NSOutlineViewDelegateP", "controlTextDidEndEditing"]
+- !private ["So21NSOutlineViewDelegateP", "mode"]
+- ["So21NSOutlineViewDelegateP", "outlineView"]
+- ["So21NSOutlineViewDelegateP", "outlineViewColumnDidMove"]
+- ["So21NSOutlineViewDelegateP", "outlineViewColumnDidResize"]
+- ["So21NSOutlineViewDelegateP", "outlineViewItemDidCollapse"]
+- ["So21NSOutlineViewDelegateP", "outlineViewItemDidExpand"]
+- ["So21NSOutlineViewDelegateP", "outlineViewItemWillCollapse"]
+- ["So21NSOutlineViewDelegateP", "outlineViewItemWillExpand"]
+- ["So21NSOutlineViewDelegateP", "outlineViewSelectionDidChange"]
+- ["So21NSOutlineViewDelegateP", "outlineViewSelectionIsChanging"]
+- !private ["So21NSOutlineViewDelegateP", "print"]
+- ["So21NSOutlineViewDelegateP", "selectionShouldChange"]
+- ["So21NSOutlineViewDelegateP", "selectionShouldChangeInOutlineView"]
+- ["12Astro_Imager20NavigationControllerC", "NavigationMode"]
+- ["12Astro_Imager20NavigationControllerC", "awakeFromNib"]
+- ["12Astro_Imager20NavigationControllerC", "control"]
+- ["12Astro_Imager20NavigationControllerC", "controlTextDidBeginEditing"]
+- ["12Astro_Imager20NavigationControllerC", "controlTextDidChange"]
+- ["12Astro_Imager20NavigationControllerC", "controlTextDidEndEditing"]
+- ["12Astro_Imager20NavigationControllerC", "deinit"]
+- ["12Astro_Imager20NavigationControllerC", "init"]
+- ["12Astro_Imager20NavigationControllerC", "mode"]
+- ["12Astro_Imager20NavigationControllerC", "outlineView"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewColumnDidMove"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewColumnDidResize"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewItemDidCollapse"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewItemDidExpand"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewItemWillCollapse"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewItemWillExpand"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewSelectionDidChange"]
+- ["12Astro_Imager20NavigationControllerC", "outlineViewSelectionIsChanging"]
+- !private ["12Astro_Imager20NavigationControllerC", "print"]
+- ["12Astro_Imager20NavigationControllerC", "selectionShouldChange"]
+- ["12Astro_Imager20NavigationControllerC", "selectionShouldChangeInOutlineView"]
+- ["12Astro_Imager20NavigationControllerC", "showDeviceNavigator"]
+- ["12Astro_Imager20NavigationControllerC", "showImageNavigator"]
+- ["12Astro_Imager20NavigationControllerC", "showObjectNavigator"]
+- ["12Astro_Imager20NavigationControllerC", "showPipelineNavigator"]
+- ["12Astro_Imager20NavigationControllerC", "showProcessNavigator"]
+- ["12Astro_Imager14NavigationModeO", "=="]
+- ["12Astro_Imager14NavigationModeO", "RawValue"]
+- ["12Astro_Imager14NavigationModeO", "_Default_RawValue"]
+- !private ["12Astro_Imager14NavigationModeO", "_findStringSwitchCase"]
+- ["12Astro_Imager14NavigationModeO", "_rawHashValue"]
+- ["12Astro_Imager14NavigationModeO", "deinit"]
+- ["12Astro_Imager14NavigationModeO", "devices"]
+- ["12Astro_Imager14NavigationModeO", "hash"]
+- ["12Astro_Imager14NavigationModeO", "hashValue"]
+- ["12Astro_Imager14NavigationModeO", "images"]
+- ["12Astro_Imager14NavigationModeO", "init"]
+- ["12Astro_Imager14NavigationModeO", "objects"]
+- ["12Astro_Imager14NavigationModeO", "pipeline"]
+- ["12Astro_Imager14NavigationModeO", "processes"]
+- ["12Astro_Imager14NavigationModeO", "rawValue"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- !private ["SY", "devices"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- !private ["SY", "images"]
+- ["SY", "init"]
+- !private ["SY", "objects"]
+- ["SY", "pipeline"]
+- !private ["SY", "processes"]
+- ["SY", "rawValue"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "control"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "controlTextDidBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "controlTextDidChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "controlTextDidEndEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewColumnDidMove"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewColumnDidResize"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewItemDidCollapse"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewItemDidExpand"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewItemWillCollapse"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewItemWillExpand"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewSelectionDidChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "outlineViewSelectionIsChanging"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "selectionShouldChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "selectionShouldChangeInOutlineView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "control"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "controlTextDidBeginEditing"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "controlTextDidChange"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "controlTextDidEndEditing"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mode"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewColumnDidMove"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewColumnDidResize"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewItemDidCollapse"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewItemDidExpand"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewItemWillCollapse"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewItemWillExpand"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewSelectionDidChange"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outlineViewSelectionIsChanging"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "selectionShouldChange"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "selectionShouldChangeInOutlineView"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
+- "SQ"
+- "SH"
+- "So28NSControlTextEditingDelegateP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So23NSOutlineViewDataSourceP"
+- "So21NSOutlineViewDelegateP"
+- "12Astro_Imager20NavigationControllerC"
+- "12Astro_Imager14NavigationModeO"
+- "SY"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreImage.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/QuartzCore.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Metal.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/AppKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreImage.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/QuartzCore.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Metal.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImagerPlugin.framework/Modules/AstroImagerPlugin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImager.framework/Modules/AstroImager.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/AppKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/wonco/Development/Astro Imager/AstroImagerPlugin/AstroImagerPlugin.h"
+- "/Users/wonco/Development/Astro Imager/AstroImager/AstroImager.h"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImagerPlugin.framework/Versions/A/Headers/AstroImagerPlugin-Swift.h"
+- "/Users/wonco/Development/Astro Imager/Build/Products/Debug/AstroImager.framework/Versions/A/Headers/AstroImager-Swift.h"
+- "/Users/wonco/Development/Astro Imager/Build/Intermediates/Astro Imager.build/Debug/AstroImagerPlugin.build/module.modulemap"
+- "/Users/wonco/Development/Astro Imager/Build/Intermediates/Astro Imager.build/Debug/AstroImager.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "7f94c5266d16682e0c3fb5e44e6f06f6"

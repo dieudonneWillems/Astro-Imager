@@ -1,0 +1,10 @@
+framework module AstroImager {
+  umbrella header "AstroImager.h"
+
+  export *
+  module * { export * }
+}
+
+module AstroImager.__Swift {
+    exclude header "AstroImager-Swift.h"
+}

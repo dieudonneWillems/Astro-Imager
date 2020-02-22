@@ -80,11 +80,12 @@
 		0277106023F8CA590038A144 /* plugin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0277105F23F8CA590038A144 /* plugin.plist */; };
 		0277106423F99F6A0038A144 /* play.rectangle.fill.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0277106223F99F690038A144 /* play.rectangle.fill.svg */; };
 		0277106523F99F6A0038A144 /* play.rectangle.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0277106323F99F690038A144 /* play.rectangle.svg */; };
-		0277106723FC91710038A144 /* ProcessorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277106623FC91710038A144 /* ProcessorPlugin.swift */; };
 		0277106923FC9B810038A144 /* DirectoryNavigatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0277106823FC9B810038A144 /* DirectoryNavigatorCell.xib */; };
 		0277106B23FC9BF60038A144 /* DirectoryInspectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0277106A23FC9BF60038A144 /* DirectoryInspectorView.xib */; };
 		0277106D23FDEFA10038A144 /* DirectoryNavigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277106C23FDEFA10038A144 /* DirectoryNavigatorController.swift */; };
 		0277106F23FDEFC90038A144 /* DirectoryInspectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277106E23FDEFC90038A144 /* DirectoryInspectorController.swift */; };
+		0277107123FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */; };
+		02771073240098080038A144 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02771072240098080038A144 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,11 +266,12 @@
 		0277105F23F8CA590038A144 /* plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = plugin.plist; sourceTree = "<group>"; };
 		0277106223F99F690038A144 /* play.rectangle.fill.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = play.rectangle.fill.svg; sourceTree = "<group>"; };
 		0277106323F99F690038A144 /* play.rectangle.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = play.rectangle.svg; sourceTree = "<group>"; };
-		0277106623FC91710038A144 /* ProcessorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessorPlugin.swift; sourceTree = "<group>"; };
 		0277106823FC9B810038A144 /* DirectoryNavigatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectoryNavigatorCell.xib; sourceTree = "<group>"; };
 		0277106A23FC9BF60038A144 /* DirectoryInspectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DirectoryInspectorView.xib; sourceTree = "<group>"; };
 		0277106C23FDEFA10038A144 /* DirectoryNavigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryNavigatorController.swift; sourceTree = "<group>"; };
 		0277106E23FDEFC90038A144 /* DirectoryInspectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryInspectorController.swift; sourceTree = "<group>"; };
+		0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDirectoryGeneratorPlugin.swift; sourceTree = "<group>"; };
+		02771072240098080038A144 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 			children = (
 				021C7BAA23F71348009B4F3A /* AppDelegate.swift */,
 				021C7BAC23F71348009B4F3A /* Project.swift */,
+				02771072240098080038A144 /* NavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			children = (
 				0277105F23F8CA590038A144 /* plugin.plist */,
 				02770FE623F857760038A144 /* Info.plist */,
+				0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */,
 				02770FEA23F857A50038A144 /* ImageDirectoryGenerator.swift */,
 				0277106C23FDEFA10038A144 /* DirectoryNavigatorController.swift */,
 				0277106E23FDEFC90038A144 /* DirectoryInspectorController.swift */,
@@ -493,7 +497,6 @@
 			children = (
 				0277105D23F8C1EA0038A144 /* MetaPlugin.swift */,
 				0277105B23F8C1630038A144 /* AstroImagerPlugin.swift */,
-				0277106623FC91710038A144 /* ProcessorPlugin.swift */,
 				02770FF323F858650038A144 /* AstroImagerPlugin.h */,
 				02770FF423F858650038A144 /* Info.plist */,
 			);
@@ -864,6 +867,7 @@
 				02770FAD23F841330038A144 /* StackedImageDAO+CoreDataClass.swift in Sources */,
 				02770FB823F841330038A144 /* DatePropertyDAO+CoreDataProperties.swift in Sources */,
 				02770FAA23F841330038A144 /* SerializerDAO+CoreDataProperties.swift in Sources */,
+				02771073240098080038A144 /* NavigationController.swift in Sources */,
 				02770FAE23F841330038A144 /* StackedImageDAO+CoreDataProperties.swift in Sources */,
 				02770FBE23F841330038A144 /* DataPropertyDAO+CoreDataProperties.swift in Sources */,
 				02770FA923F841330038A144 /* SerializerDAO+CoreDataClass.swift in Sources */,
@@ -901,6 +905,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0277107123FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift in Sources */,
 				02770FEB23F857A50038A144 /* ImageDirectoryGenerator.swift in Sources */,
 				0277106D23FDEFA10038A144 /* DirectoryNavigatorController.swift in Sources */,
 				0277106F23FDEFC90038A144 /* DirectoryInspectorController.swift in Sources */,
@@ -911,7 +916,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0277106723FC91710038A144 /* ProcessorPlugin.swift in Sources */,
 				0277105C23F8C1630038A144 /* AstroImagerPlugin.swift in Sources */,
 				0277105E23F8C1EA0038A144 /* MetaPlugin.swift in Sources */,
 			);

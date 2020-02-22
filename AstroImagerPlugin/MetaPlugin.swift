@@ -10,6 +10,7 @@ import Foundation
 import AppKit
 
 public enum PluginServiceType : String {
+    case pipeline
     case generator
     case transformer
     case serializer
@@ -43,6 +44,7 @@ public struct MetaPlugin {
             let dict = serviceDict as! NSDictionary
             let sname = dict["name"] as! String
             let sdescription = dict["description"] as! String
+            let serviceClass = dict["class"] as! String
             let iconURL = plugin.url(forResource: "icon", withExtension: "png")
             var icon : NSImage? = nil
             if iconURL != nil {
@@ -62,7 +64,7 @@ public struct MetaPlugin {
                 stype = PluginServiceType.viewLayer
             }
             if stype != nil {
-                let service = PluginService(name: sname, description: sdescription, icon: icon, type: stype!)
+                let service = PluginService(name: sname, description: sdescription, icon: icon, type: stype!, serviceClass: serviceClass)
                 services.append(service)
             }
         }
@@ -86,11 +88,13 @@ public struct PluginService {
     public let name : String
     public let description : String
     public let icon : NSImage?
+    public let serviceClass : String
     
-    init(name: String, description: String, icon: NSImage?, type: PluginServiceType) {
+    init(name: String, description: String, icon: NSImage?, type: PluginServiceType, serviceClass: String) {
         self.type = type
         self.name = name
         self.description = description
         self.icon = icon
+        self.serviceClass = serviceClass
     }
 }

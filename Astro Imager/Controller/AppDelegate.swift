@@ -14,6 +14,11 @@ import AstroImagerPlugin
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var plugins = [AstroImagerPlugin]()
+    
+    public private(set) var availableGenerators = [Generator]()
+    public private(set) var availableTransformers = [Transformer]()
+    public private(set) var availableSerializers = [Serializer]()
+    
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.loadPlugins()
@@ -22,8 +27,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
+    
+    // MARK: - Outlets
+    
+    
+    // MARK: - Menu Actions
+    
 
-
+    // MARK: - Plugins
+    
     func loadPlugins() {
         let path = Bundle.main.bundlePath
         // TODO: looking in current directory - should be in bundle in the future
@@ -37,6 +49,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     if (principalClass as? AstroImagerPlugin.Type) != nil {
                         let pluginInstance: AstroImagerPlugin = (principalClass as? AstroImagerPlugin.Type)!.init()
                         self.plugins.append(pluginInstance)
+                        let processors = pluginInstance.processors
+                        for processor in processors {
+                            if (processor as? Generator) != nil {
+                                availableGenerators.append(processor as! Generator)
+                            } else if (processor as? Transformer) != nil {
+                                availableTransformers.append(processor as! Transformer)
+                            } else if (processor as? Serializer) != nil {
+                                availableSerializers.append(processor as! Serializer)
+                            }
+                        }
                     }
                 }
             }

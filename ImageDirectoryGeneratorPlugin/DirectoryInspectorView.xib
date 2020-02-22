@@ -40,7 +40,7 @@
                     </constraints>
                     <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="2ue-af-eU7" id="blj-sU-Hnc">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <menu key="menu" id="7s2-i8-7Gs">
                             <items>
                                 <menuItem title="Last Used Folder" state="on" id="2ue-af-eU7"/>
@@ -61,7 +61,7 @@
                         <constraint firstAttribute="height" constant="14" id="Kxa-ss-T06"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Base Folder" id="fSD-V3-m7T">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -73,7 +73,7 @@
                         <constraint firstAttribute="height" constant="27" id="jUw-At-BA6"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" selectable="YES" title="Multiline Label" id="orQ-ta-L2K">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -85,7 +85,7 @@
                     </constraints>
                     <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="DNi-kb-pia" id="spp-X3-afV">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <menu key="menu" id="9WN-YE-Ddy">
                             <items>
                                 <menuItem title="Last Used Folder" state="on" id="DNi-kb-pia"/>
@@ -106,7 +106,7 @@
                         <constraint firstAttribute="width" constant="96" id="zqS-OK-4Os"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Light Frames" id="Bky-xH-hIu">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -118,7 +118,7 @@
                     </constraints>
                     <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cPW-80-XcK" id="zFx-6a-pW5">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <menu key="menu" id="r9s-Iz-pgi">
                             <items>
                                 <menuItem title="Last Used Folder" state="on" id="cPW-80-XcK"/>
@@ -139,7 +139,7 @@
                         <constraint firstAttribute="width" constant="96" id="HpQ-rd-nYE"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Flat Frames" id="RzX-1E-2kH">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -151,7 +151,7 @@
                     </constraints>
                     <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="sbV-ZG-BwF" id="tJn-Mb-Rmb">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <menu key="menu" id="1ca-MI-opq">
                             <items>
                                 <menuItem title="Last Used Folder" state="on" id="sbV-ZG-BwF"/>
@@ -172,7 +172,7 @@
                         <constraint firstAttribute="width" constant="96" id="vA7-8Q-UMJ"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Bias Frames" id="0c0-Hh-3Tg">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -184,7 +184,7 @@
                     </constraints>
                     <popUpButtonCell key="cell" type="push" title="Last Used Folder" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Tvg-ob-z9X" id="X7H-bP-bXg">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <menu key="menu" id="wFy-TF-ug6">
                             <items>
                                 <menuItem title="Last Used Folder" state="on" id="Tvg-ob-z9X"/>
@@ -205,7 +205,7 @@
                         <constraint firstAttribute="height" constant="14" id="MuX-Oe-7vh"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" alignment="right" title="Dark Frames" id="AbN-6W-Cyo">
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -218,7 +218,7 @@
                     </constraints>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFollowLinkFreestandingTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="4Nx-PQ-gry">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="controlContent" size="11"/>
+                        <font key="font" metaFont="label" size="11"/>
                     </buttonCell>
                     <connections>
                         <action selector="showInFinderClicked:" target="-2" id="a7j-zZ-xfO"/>

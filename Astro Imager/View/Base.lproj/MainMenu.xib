@@ -349,11 +349,31 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" id="oXn-a9-tPt">
                                     <items>
-                                        <menuItem title="Show Pipeline Navigator" keyEquivalent="1" id="sOr-K1-fqR"/>
-                                        <menuItem title="Show Device Navigator" keyEquivalent="2" id="3If-7d-EZc"/>
-                                        <menuItem title="Show Image Navigotor" keyEquivalent="3" id="5EO-zg-NGS"/>
-                                        <menuItem title="Show Object Navigator" keyEquivalent="4" id="WGf-Yc-YBR"/>
-                                        <menuItem title="Show Process Navigator" keyEquivalent="5" id="SJ3-ZC-WK4"/>
+                                        <menuItem title="Show Pipeline Navigator" keyEquivalent="1" id="sOr-K1-fqR">
+                                            <connections>
+                                                <action selector="showPipelineNavigator:" target="-1" id="acy-gR-pEA"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show Device Navigator" keyEquivalent="2" id="3If-7d-EZc">
+                                            <connections>
+                                                <action selector="showDeviceNavigator:" target="-1" id="eCp-c6-ZMW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show Image Navigotor" keyEquivalent="3" id="5EO-zg-NGS">
+                                            <connections>
+                                                <action selector="showImageNavigator:" target="-1" id="Zuc-lF-xHv"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show Object Navigator" keyEquivalent="4" id="WGf-Yc-YBR">
+                                            <connections>
+                                                <action selector="showObjectNavigator:" target="-1" id="EEZ-kI-hBx"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show Process Navigator" keyEquivalent="5" id="SJ3-ZC-WK4">
+                                            <connections>
+                                                <action selector="showProcessNavigator:" target="-1" id="Hqf-jt-9SQ"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="gzp-cn-DXR"/>
                                         <menuItem title="Hide Navigators" keyEquivalent="0" id="5se-se-VlM"/>
                                     </items>
@@ -415,12 +435,20 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Pipeline" id="ybQ-t9-BWw">
                         <items>
-                            <menuItem title="Run Pipeline" keyEquivalent="r" id="mCs-58-eDf"/>
+                            <menuItem title="Run Pipeline" keyEquivalent="r" id="mCs-58-eDf">
+                                <connections>
+                                    <action selector="runPipeline:" target="-1" id="2s9-9l-Xet"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Clean Intermediate Results..." id="LPx-iM-R3o">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="CnH-uU-miB"/>
-                            <menuItem title="Insert Processor... " keyEquivalent="i" id="gdv-gK-puk"/>
+                            <menuItem title="Insert Processor... " keyEquivalent="i" id="gdv-gK-puk">
+                                <connections>
+                                    <action selector="insertProcessor:" target="-1" id="kbN-ZX-MvG"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>

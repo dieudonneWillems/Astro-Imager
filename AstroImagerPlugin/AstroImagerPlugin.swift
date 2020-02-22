@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AstroImager
 
 public protocol AstroImagerPlugin {
     
@@ -14,7 +15,7 @@ public protocol AstroImagerPlugin {
     
     var meta: MetaPlugin? {get}
     
-    func newInstance(name: String) -> Any?
+    var processors : [Processor] {get}
     
     init()
     

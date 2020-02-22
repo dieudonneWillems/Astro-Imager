@@ -1,0 +1,11 @@
+framework module AstroImager {
+  umbrella header "AstroImager.h"
+
+  export *
+  module * { export * }
+}
+
+module AstroImager.Swift {
+    header "AstroImager-Swift.h"
+    requires objc
+}

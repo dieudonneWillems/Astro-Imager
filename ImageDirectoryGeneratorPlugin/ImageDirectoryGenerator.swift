@@ -11,19 +11,10 @@ import AppKit
 import AstroImager
 import AstroImagerPlugin
 
-public class ImageDirectoryGenerator : ProcessorPlugin {
+public class ImageDirectoryGenerator : Generator {
     
     private var navigatorController : DirectoryNavigatorController?
     private var inspectorController : DirectoryInspectorController?
-    
-    public var isLoaded: Bool {
-        get {
-            return meta != nil
-        }
-    }
-    
-    public var meta: MetaPlugin?
-    
     
     public var navigatorCellView : NSView? {
         get {
@@ -52,14 +43,6 @@ public class ImageDirectoryGenerator : ProcessorPlugin {
             nib!.instantiate(withOwner: inspectorController!, topLevelObjects: nil)
             return inspectorController?.view
         }
-    }
-    
-    public required init() {
-        meta = MetaPlugin(principialClass: ImageDirectoryGenerator.self)
-    }
-    
-    public func newInstance(name: String) -> Any? {
-        return nil
     }
     
     public private(set) var progress: Float = 0.0

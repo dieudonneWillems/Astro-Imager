@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "c65ff751a645f3c62f7227ed9b445f2c"
+build_time: [1582245259, 412695000]
+inputs:
+  "/Users/wonco/Development/Astro Imager/AstroImagerPlugin/AstroImagerPlugin.swift": [1582245259, 113791040]
+  "/Users/wonco/Development/Astro Imager/AstroImagerPlugin/MetaPlugin.swift": [1582241425, 430764600]
