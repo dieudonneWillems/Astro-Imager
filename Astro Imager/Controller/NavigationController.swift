@@ -27,4 +27,20 @@ public class NavigationController : NSObject, NSOutlineViewDelegate, NSOutlineVi
     public override func awakeFromNib() {
         self.mode = .pipeline
     }
+    
+    public func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
+        return ""
+    }
+    
+    public func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: Any) -> Bool {
+        return false
+    }
+    
+    public func outlineView(_ outlineView: NSOutlineView, numberOfChildrenOfItem item: Any?) -> Int {
+        return 0
+    }
+    
+    public func outlineView(_ outlineView: NSOutlineView, objectValueFor tableColumn: NSTableColumn?, byItem item: Any?) -> Any? {
+        return ""
+    }
 }

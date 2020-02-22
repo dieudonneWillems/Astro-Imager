@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "59dc562b16e846231117470238707722"
-build_time: [1582245278, 158029000]
-inputs:
-  "/Users/wonco/Development/Astro Imager/ImageDirectoryGeneratorPlugin/ImageDirectoryGeneratorPlugin.swift": [1582245274, 705864029]
-  "/Users/wonco/Development/Astro Imager/ImageDirectoryGeneratorPlugin/ImageDirectoryGenerator.swift": [1582241287, 628188032]
-  "/Users/wonco/Development/Astro Imager/ImageDirectoryGeneratorPlugin/DirectoryNavigatorController.swift": [1582152948, 74414549]
-  "/Users/wonco/Development/Astro Imager/ImageDirectoryGeneratorPlugin/DirectoryInspectorController.swift": [1582152954, 570989873]
