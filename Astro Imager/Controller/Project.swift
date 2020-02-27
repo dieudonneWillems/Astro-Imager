@@ -7,12 +7,29 @@
 //
 
 import Cocoa
+import AstroImager
 
 class Project: NSPersistentDocument {
+    
+    private var pipeline : Pipeline?
 
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
+    }
+    
+    public override func awakeFromNib() {
+        Swift.print("Awaking")
+        let appDelegate = NSApplication.shared.delegate
+        if appDelegate != nil {
+            self.pipeline = DefaultPipeline(name: "Basic Image Stacking Pipeline", description: "", icon: NSImage(named: "NSActionTemplate")!)
+            self.pipeline?.pluginProvider = appDelegate as? PluginProvider
+            self.pipeline!.add(generator: "Image Folder")
+            _ = self.pipeline?.load()
+            navigationController.pipeline = self.pipeline
+        } else {
+            self.pipeline = nil
+        }
     }
     
     // MARK: - Outlets

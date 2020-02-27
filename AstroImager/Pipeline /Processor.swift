@@ -11,6 +11,8 @@ import AppKit
 
 public protocol Processor {
     
+    var name : String {get}
+    
     var navigatorCellView : NSView? {get}
     
     var inspectorView : NSView? {get}

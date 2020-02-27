@@ -7,6 +7,7 @@
 //
 
 import AppKit
+import AstroImager
 
 public enum NavigationMode : String {
     case pipeline
@@ -23,6 +24,17 @@ public class NavigationController : NSObject, NSOutlineViewDelegate, NSOutlineVi
             print("Setting Navigation Controller mode to: \(newValue.rawValue)")
         }
     }
+    
+    public var pipeline: Pipeline? = nil {
+        didSet(oldValue) {
+            if mode == .pipeline {
+                navigationView.reloadData()
+            }
+        }
+    }
+    
+    @IBOutlet weak var navigationView: NSOutlineView!
+    
     
     public override func awakeFromNib() {
         self.mode = .pipeline

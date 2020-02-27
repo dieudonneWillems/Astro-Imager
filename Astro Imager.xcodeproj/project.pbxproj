@@ -86,6 +86,8 @@
 		0277106F23FDEFC90038A144 /* DirectoryInspectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277106E23FDEFC90038A144 /* DirectoryInspectorController.swift */; };
 		0277107123FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */; };
 		02771073240098080038A144 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02771072240098080038A144 /* NavigationController.swift */; };
+		02D975612403397D007B3EA7 /* DefaultPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D975602403397D007B3EA7 /* DefaultPipeline.swift */; };
+		02D9756324034B3C007B3EA7 /* PluginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9756224034B3C007B3EA7 /* PluginProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +274,8 @@
 		0277106E23FDEFC90038A144 /* DirectoryInspectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryInspectorController.swift; sourceTree = "<group>"; };
 		0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDirectoryGeneratorPlugin.swift; sourceTree = "<group>"; };
 		02771072240098080038A144 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		02D975602403397D007B3EA7 /* DefaultPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPipeline.swift; sourceTree = "<group>"; };
+		02D9756224034B3C007B3EA7 /* PluginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +425,8 @@
 				021C7C1E23F78167009B4F3A /* Generator.swift */,
 				02770F7723F83F970038A144 /* Transformer.swift */,
 				02770F6F23F838710038A144 /* Serializer.swift */,
+				02D975602403397D007B3EA7 /* DefaultPipeline.swift */,
+				02D9756224034B3C007B3EA7 /* PluginProvider.swift */,
 			);
 			path = "Pipeline ";
 			sourceTree = "<group>";
@@ -934,7 +940,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0277105123F8C0D70038A144 /* Pipeline.swift in Sources */,
+				02D9756324034B3C007B3EA7 /* PluginProvider.swift in Sources */,
 				0277105623F8C0DC0038A144 /* Viewer.swift in Sources */,
+				02D975612403397D007B3EA7 /* DefaultPipeline.swift in Sources */,
 				0277105423F8C0DC0038A144 /* Transformer.swift in Sources */,
 				0277105823F8C0DC0038A144 /* ImageViewerLayer.swift in Sources */,
 				0277103C23F858DB0038A144 /* ImageSet.swift in Sources */,

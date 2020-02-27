@@ -28,7 +28,7 @@ public class ImageDirectoryGeneratorPlugin : AstroImagerPlugin {
     public var processors : [Processor] {
         get {
             var procs = [Processor]()
-            procs.append(ImageDirectoryGenerator())
+            procs.append(ImageDirectoryGenerator(name: "Image Folder"))
             return procs
         }
     }

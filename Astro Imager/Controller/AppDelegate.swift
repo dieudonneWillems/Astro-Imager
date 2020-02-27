@@ -11,21 +11,43 @@ import AstroImager
 import AstroImagerPlugin
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-
-    private var plugins = [AstroImagerPlugin]()
+class AppDelegate: NSObject, NSApplicationDelegate, PluginProvider {
     
-    public private(set) var availableGenerators = [Generator]()
-    public private(set) var availableTransformers = [Transformer]()
-    public private(set) var availableSerializers = [Serializer]()
-    
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.loadPlugins()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+    }
+    
+    // MARK: - Plugin Provider
+    
+    private var plugins = [AstroImagerPlugin]()
+    
+    public private(set) var availableGenerators = [Generator]()
+    public private(set) var availableTransformers = [Transformer]()
+    public private(set) var availableSerializers = [Serializer]()
+    
+    public func generator(with name: String) -> Generator? {
+        return processor(with: name, from: availableGenerators) as? Generator
+    }
+    
+    public func transformer(with name: String) -> Transformer? {
+        return processor(with: name, from: availableTransformers) as? Transformer
+    }
+    
+    public func serializer(with name: String) -> Serializer? {
+        return processor(with: name, from: availableSerializers) as? Serializer
+    }
+    
+    private func processor(with name: String, from array: [Processor]) -> Processor? {
+        for processor in array {
+            if processor.name == name {
+                return processor
+            }
+        }
+        return nil
     }
     
     // MARK: - Outlets
@@ -60,6 +82,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             }
                         }
                     }
+                    print("Loaded plugin at: \(url)")
                 }
             }
         } catch {

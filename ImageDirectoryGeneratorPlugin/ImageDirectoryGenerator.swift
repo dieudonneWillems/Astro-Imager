@@ -13,6 +13,8 @@ import AstroImagerPlugin
 
 public class ImageDirectoryGenerator : Generator {
     
+    public let name: String
+    
     private var navigatorController : DirectoryNavigatorController?
     private var inspectorController : DirectoryInspectorController?
     
@@ -46,6 +48,10 @@ public class ImageDirectoryGenerator : Generator {
     }
     
     public private(set) var progress: Float = 0.0
+    
+    public init(name: String) {
+        self.name = name
+    }
     
     public func configure(with properties: [String : Any]) {
         
