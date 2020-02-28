@@ -15,21 +15,19 @@ public protocol Pipeline {
     var description : String {get}
     var icon : NSImage {get}
     
-    var pluginProvider : PluginProvider? {get set}
-    
     var generators : [Generator] {get}
     var transformers : [Transformer] {get}
     var serializers : [Serializer] {get}
     
-    func add(generator name: String)
+    func add(generatorFromComponent identifier: UUID)
     
     func remove(generatorAt index: Int)
     
-    func add(transformer name: String)
+    func add(transformerFromComponent identifier: UUID)
     
     func remove(transformerAt index: Int)
     
-    func add(serializer name: String)
+    func add(serializerFromComponent identifier: UUID)
     
     func remove(serializerAt index: Int)
     

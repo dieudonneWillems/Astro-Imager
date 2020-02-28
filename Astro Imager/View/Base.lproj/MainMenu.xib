@@ -10,7 +10,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Astro_Imager" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
@@ -385,15 +385,27 @@
                                     <items>
                                         <menuItem title="Show Identity Inspector" keyEquivalent="1" id="Tkm-Yj-mgZ">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="showIdentityInspector:" target="-1" id="FqV-w1-TZJ"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Show Attributes Inspector" keyEquivalent="2" id="V7Q-Hf-2rd">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="showAttributesInspector:" target="-1" id="gcW-C8-fCr"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Show History Inspector " keyEquivalent="3" id="ylp-ue-VIE">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="showHistoryInspector:" target="-1" id="cA4-X2-5EV"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Show Help Inspector" keyEquivalent="4" id="bFg-o3-Gpe">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="showHelpInspector:" target="-1" id="V7Z-YL-HcA"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="l2N-OD-NX6"/>
                                         <menuItem title="Hide Inspectors" keyEquivalent="0" id="ZN3-IL-5pa">

@@ -1,5 +1,5 @@
 //
-//  DirectoryInspectorController.swift
+//  DirectoryGeneratorPropertyInspector.swift
 //  ImageDirectoryGeneratorPlugin
 //
 //  Created by Don Willems on 19/02/2020.
@@ -9,9 +9,12 @@
 import Foundation
 import AppKit
 
-public class DirectoryInspectorController {
+public class DirectoryGeneratorAttributesInspector {
     
-    @IBOutlet weak var view: NSView!
+    // I want to be sure that the view is retained after being removed from the superView
+    // so that it can be reused.
+    // Therefore, a strong outlet to view
+    @IBOutlet var view: NSView!
     
     @IBOutlet weak var pathLabel: NSTextField!
     

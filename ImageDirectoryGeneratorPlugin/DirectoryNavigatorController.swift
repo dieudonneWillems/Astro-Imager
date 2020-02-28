@@ -11,7 +11,7 @@ import AppKit
 
 public class DirectoryNavigatorController {
     
-    @IBOutlet weak var view: NSView!
+    @IBOutlet var view: NSView!
     
     @IBOutlet weak var pathLabel: NSTextField!
 }

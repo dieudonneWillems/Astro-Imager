@@ -5,7 +5,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="DirectoryInspectorController">
+        <customObject id="-2" userLabel="File's Owner" customClass="DirectoryGeneratorAttributesInspector">
             <connections>
                 <outlet property="baseFolderPUB" destination="b7Z-d6-Vcn" id="W2g-qk-vu7"/>
                 <outlet property="biasFramesPUB" destination="2XP-Vu-Nz9" id="LPm-PJ-WkK"/>
@@ -28,7 +28,7 @@
                         <constraint firstAttribute="height" constant="14" id="cIm-LC-5p2"/>
                     </constraints>
                     <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Image Folder" id="aqb-NP-UGR">
-                        <font key="font" metaFont="systemBold" size="11"/>
+                        <font key="font" metaFont="smallSystemBold"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -233,6 +233,7 @@
                 <constraint firstAttribute="trailing" secondItem="b7Z-d6-Vcn" secondAttribute="trailing" constant="4" id="2qU-fL-h9W"/>
                 <constraint firstItem="r74-OD-hjX" firstAttribute="leading" secondItem="0fb-WI-ARc" secondAttribute="trailing" constant="7" id="6vB-ld-oW0"/>
                 <constraint firstAttribute="trailing" secondItem="2XP-Vu-Nz9" secondAttribute="trailing" constant="4" id="98W-qQ-Y7f"/>
+                <constraint firstAttribute="trailing" secondItem="BDt-IP-k5e" secondAttribute="trailing" constant="6" id="9O2-9v-rDz"/>
                 <constraint firstItem="2XP-Vu-Nz9" firstAttribute="top" secondItem="KTk-if-qnQ" secondAttribute="bottom" constant="6" id="9cE-aZ-QxV"/>
                 <constraint firstItem="b7Z-d6-Vcn" firstAttribute="leading" secondItem="7wl-DF-0vf" secondAttribute="trailing" constant="7" id="ASd-vV-Swx"/>
                 <constraint firstAttribute="trailing" secondItem="Vq4-x8-Z9E" secondAttribute="trailing" constant="4" id="DQN-6z-uyh"/>

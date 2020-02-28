@@ -11,11 +11,8 @@ import AppKit
 
 public protocol Processor {
     
-    var name : String {get}
-    
-    var navigatorCellView : NSView? {get}
-    
-    var inspectorView : NSView? {get}
+    var identifier: UUID {get}
+    var componentIdentifier: UUID {get}
     
     var progress: Float {get}
     

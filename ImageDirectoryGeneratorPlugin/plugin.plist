@@ -16,7 +16,7 @@
 			<key>type</key>
 			<string>generator</string>
 			<key>class</key>
-			<string>ImageDirectoryGenerator</string>
+			<string>ImageDirectoryGeneratorComponent</string>
 		</dict>
 	</array>
 </dict>

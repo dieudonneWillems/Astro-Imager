@@ -22,13 +22,13 @@ public class ImageDirectoryGeneratorPlugin : AstroImagerPlugin {
     public var meta: MetaPlugin?
     
     public required init() {
-        meta = MetaPlugin(principialClass: ImageDirectoryGenerator.self)
+        meta = MetaPlugin(principialClass: ImageDirectoryGeneratorComponent.self)
     }
     
-    public var processors : [Processor] {
+    public var processorComponents : [ProcessorComponent] {
         get {
-            var procs = [Processor]()
-            procs.append(ImageDirectoryGenerator(name: "Image Folder"))
+            var procs = [ProcessorComponent]()
+            procs.append(ImageDirectoryGeneratorComponent(name: "Image Folder"))
             return procs
         }
     }

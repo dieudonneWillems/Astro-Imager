@@ -15,7 +15,7 @@ public protocol AstroImagerPlugin {
     
     var meta: MetaPlugin? {get}
     
-    var processors : [Processor] {get}
+    var processorComponents : [ProcessorComponent] {get}
     
     init()
     

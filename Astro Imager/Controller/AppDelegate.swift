@@ -25,26 +25,70 @@ class AppDelegate: NSObject, NSApplicationDelegate, PluginProvider {
     
     private var plugins = [AstroImagerPlugin]()
     
-    public private(set) var availableGenerators = [Generator]()
-    public private(set) var availableTransformers = [Transformer]()
-    public private(set) var availableSerializers = [Serializer]()
+    public private(set) var availableGeneratorComponents = [GeneratorComponent]()
+    public private(set) var availableTransformerComponents = [TransformerComponent]()
+    public private(set) var availableSerializerComponents = [SerializerComponent]()
     
-    public func generator(with name: String) -> Generator? {
-        return processor(with: name, from: availableGenerators) as? Generator
+    public func processorComponent(with identifier: UUID) -> ProcessorComponent? {
+        let generatorComponent = self.generatorComponent(with: identifier)
+        if generatorComponent != nil {
+            return generatorComponent
+        }
+        let transformerComponent = self.transformerComponent(with: identifier)
+        if transformerComponent != nil {
+            return transformerComponent
+        }
+        let serializerComponent = self.serializerComponent(with: identifier)
+        if serializerComponent != nil {
+            return serializerComponent
+        }
+        return nil
     }
     
-    public func transformer(with name: String) -> Transformer? {
-        return processor(with: name, from: availableTransformers) as? Transformer
+    public func generatorComponent(name: String) -> GeneratorComponent? {
+        for generatorComponent in availableGeneratorComponents {
+            if generatorComponent.name == name {
+                return generatorComponent
+            }
+        }
+        return nil
     }
     
-    public func serializer(with name: String) -> Serializer? {
-        return processor(with: name, from: availableSerializers) as? Serializer
+    public func generatorComponent(with identifier: UUID) -> GeneratorComponent? {
+        return processorComponent(with: identifier, from: availableGeneratorComponents) as? GeneratorComponent
     }
     
-    private func processor(with name: String, from array: [Processor]) -> Processor? {
-        for processor in array {
-            if processor.name == name {
-                return processor
+    public func transformerComponent(name: String) -> TransformerComponent? {
+        for transformerComponent in availableTransformerComponents {
+            if transformerComponent.name == name {
+                return transformerComponent
+            }
+        }
+        return nil
+    }
+    
+    public func transformerComponent(with identifier: UUID) -> TransformerComponent? {
+        return processorComponent(with: identifier, from: availableTransformerComponents) as? TransformerComponent
+    }
+    
+    public func serializerComponent(name: String) -> SerializerComponent? {
+        for serializerComponent in availableSerializerComponents {
+            if serializerComponent.name == name {
+                return serializerComponent
+            }
+        }
+        return nil
+    }
+    
+    public func serializerComponent(with identifier: UUID) -> SerializerComponent? {
+        return processorComponent(with: identifier, from: availableSerializerComponents) as? SerializerComponent
+    }
+    
+    private func processorComponent(with identifier: UUID, from array: [ProcessorComponent]) -> ProcessorComponent? {
+        for processorComponent in array {
+            print("compare UUIDs: \(processorComponent.identifier) == \(identifier)")
+            if processorComponent.identifier == identifier {
+                return processorComponent
             }
         }
         return nil
@@ -58,7 +102,21 @@ class AppDelegate: NSObject, NSApplicationDelegate, PluginProvider {
 
     // MARK: - Plugins
     
+    public private(set) var pluginsAreLoaded = false
+    
+    public func reloadPlugins() {
+        pluginsAreLoaded = false
+        self.plugins.removeAll()
+        self.availableGeneratorComponents.removeAll()
+        self.availableTransformerComponents.removeAll()
+        self.availableSerializerComponents.removeAll()
+        loadPlugins()
+    }
+    
     func loadPlugins() {
+        if pluginsAreLoaded {
+            return
+        }
         let path = Bundle.main.bundlePath
         // TODO: looking in current directory - should be in bundle in the future
         let uri = URL(fileURLWithPath: path).deletingLastPathComponent()
@@ -71,20 +129,21 @@ class AppDelegate: NSObject, NSApplicationDelegate, PluginProvider {
                     if (principalClass as? AstroImagerPlugin.Type) != nil {
                         let pluginInstance: AstroImagerPlugin = (principalClass as? AstroImagerPlugin.Type)!.init()
                         self.plugins.append(pluginInstance)
-                        let processors = pluginInstance.processors
-                        for processor in processors {
-                            if (processor as? Generator) != nil {
-                                availableGenerators.append(processor as! Generator)
-                            } else if (processor as? Transformer) != nil {
-                                availableTransformers.append(processor as! Transformer)
-                            } else if (processor as? Serializer) != nil {
-                                availableSerializers.append(processor as! Serializer)
+                        let processorComponents = pluginInstance.processorComponents
+                        for processorComponent in processorComponents {
+                            if (processorComponent as? GeneratorComponent) != nil {
+                                availableGeneratorComponents.append(processorComponent as! GeneratorComponent)
+                            } else if (processorComponent as? TransformerComponent) != nil {
+                                availableTransformerComponents.append(processorComponent as! TransformerComponent)
+                            } else if (processorComponent as? SerializerComponent) != nil {
+                                availableSerializerComponents.append(processorComponent as! SerializerComponent)
                             }
                         }
                     }
                     print("Loaded plugin at: \(url)")
                 }
             }
+            pluginsAreLoaded = true
         } catch {
             Swift.print("Could not load plugins: \(error)")
         }

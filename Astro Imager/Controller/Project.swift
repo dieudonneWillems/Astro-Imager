@@ -8,10 +8,11 @@
 
 import Cocoa
 import AstroImager
+import AstroImagerPlugin
 
 class Project: NSPersistentDocument {
     
-    private var pipeline : Pipeline?
+    var pipeline : Pipeline?
 
     override init() {
         super.init()
@@ -19,12 +20,15 @@ class Project: NSPersistentDocument {
     }
     
     public override func awakeFromNib() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(self.navigationSelectionChanged(sender:)), name: NavigationNotification.navigationSelectionDidChange, object: navigationController)
         Swift.print("Awaking")
-        let appDelegate = NSApplication.shared.delegate
+        let appDelegate = NSApplication.shared.delegate as? AppDelegate
         if appDelegate != nil {
+            appDelegate!.loadPlugins()
             self.pipeline = DefaultPipeline(name: "Basic Image Stacking Pipeline", description: "", icon: NSImage(named: "NSActionTemplate")!)
-            self.pipeline?.pluginProvider = appDelegate as? PluginProvider
-            self.pipeline!.add(generator: "Image Folder")
+            (self.pipeline as! DefaultPipeline).pluginProvider = appDelegate
+            self.pipeline!.add(generatorFromComponent: (appDelegate?.generatorComponent(name: "Image Folder")?.identifier)!)
             _ = self.pipeline?.load()
             navigationController.pipeline = self.pipeline
         } else {
@@ -32,8 +36,13 @@ class Project: NSPersistentDocument {
         }
     }
     
+    // MARK: - Notifications
+    @objc private func navigationSelectionChanged(sender: Any){
+    }
+    
     // MARK: - Outlets
     @IBOutlet var navigationController: NavigationController!
+    @IBOutlet var inspectorController: InspectorController!
     
     // MARK: - Actions
     
@@ -62,6 +71,22 @@ class Project: NSPersistentDocument {
     
     @IBAction func showProcessNavigator(_ sender: Any) {
         navigationController.mode = .processes
+    }
+    
+    @IBAction func showIdentityInspector(_ sender: Any) {
+        inspectorController.mode = .identity
+    }
+    
+    @IBAction func showAttributesInspector(_ sender: Any) {
+        inspectorController.mode = .attributes
+    }
+    
+    @IBAction func showHistoryInspector(_ sender: Any) {
+        inspectorController.mode = .history
+    }
+    
+    @IBAction func showHelpInspector(_ sender: Any) {
+        inspectorController.mode = .help
     }
     
     override class var autosavesInPlace: Bool {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AstroImager
 import AppKit
 
 public class DefaultPipeline : Pipeline {
@@ -17,9 +18,11 @@ public class DefaultPipeline : Pipeline {
      
     public var icon: NSImage
     
-    private var generatorsByName = [String]()
-    private var transformersByName = [String]()
-    private var serializersByName = [String]()
+    public var pluginProvider : PluginProvider?
+    
+    private var generatorsByIdentifier = [UUID]()
+    private var transformersByIdentifier = [UUID]()
+    private var serializersByIdentifier = [UUID]()
     
     public private(set) var generators: [Generator] = [Generator]()
     
@@ -27,45 +30,49 @@ public class DefaultPipeline : Pipeline {
     
     public private(set) var serializers: [Serializer] = [Serializer]()
     
-    public var pluginProvider: PluginProvider?
-    
     public init(name: String, description: String, icon: NSImage) {
         self.name = name
         self.description = description
         self.icon = icon
     }
     
-    public func add(generator name: String) {
-        self.generatorsByName.append(name)
+    public func add(generatorFromComponent identifier: UUID) {
+        self.generatorsByIdentifier.append(identifier)
+        self.isLoaded = false
     }
     
     public func remove(generatorAt index: Int) {
         if self.generators.count > index {
             self.generators.remove(at: index)
         }
-        self.generatorsByName.remove(at: index)
+        self.generatorsByIdentifier.remove(at: index)
+        self.isLoaded = false
     }
     
-    public func add(transformer name: String) {
-        self.transformersByName.append(name)
+    public func add(transformerFromComponent identifier: UUID) {
+        self.transformersByIdentifier.append(identifier)
+        self.isLoaded = false
     }
     
     public func remove(transformerAt index: Int) {
         if self.transformers.count > index {
             self.transformers.remove(at: index)
         }
-        self.transformersByName.remove(at: index)
+        self.transformersByIdentifier.remove(at: index)
+        self.isLoaded = false
     }
     
-    public func add(serializer name: String) {
-        self.serializersByName.append(name)
+    public func add(serializerFromComponent identifier: UUID) {
+        self.serializersByIdentifier.append(identifier)
+        self.isLoaded = false
     }
     
     public func remove(serializerAt index: Int) {
         if self.serializers.count > index {
             self.serializers.remove(at: index)
         }
-        self.serializersByName.remove(at: index)
+        self.serializersByIdentifier.remove(at: index)
+        self.isLoaded = false
     }
     
     public var isRunning: Bool = false
@@ -75,26 +82,29 @@ public class DefaultPipeline : Pipeline {
         if !isLoaded {
             if pluginProvider != nil {
                 pluginProvider!.loadPlugins()
-                for name in self.generatorsByName {
-                    let generator = pluginProvider!.generator(with: name)
-                    if generator != nil {
-                        self.generators.append(generator!)
+                for id in self.generatorsByIdentifier {
+                    let generatorComponent = pluginProvider!.generatorComponent(with: id)
+                    if generatorComponent != nil {
+                        let generator = generatorComponent!.instantiateGenerator()
+                        self.generators.append(generator)
                     } else {
                         return false
                     }
                 }
-                for name in self.transformersByName {
-                    let transformer = pluginProvider!.transformer(with: name)
-                    if transformer != nil {
-                        self.transformers.append(transformer!)
+                for id in self.transformersByIdentifier {
+                    let transformerComponent = pluginProvider!.transformerComponent(with: id)
+                    if transformerComponent != nil {
+                        let transformer = transformerComponent!.instantiateTransformer()
+                        self.transformers.append(transformer)
                     } else {
                         return false
                     }
                 }
-                for name in self.serializersByName {
-                    let serializer = pluginProvider!.serializer(with: name)
-                    if serializer != nil {
-                        self.serializers.append(serializer!)
+                for id in self.serializersByIdentifier {
+                    let serializerComponent = pluginProvider!.serializerComponent(with: id)
+                    if serializerComponent != nil {
+                        let serializer = serializerComponent!.instantiateSerializer()
+                        self.serializers.append(serializer)
                     } else {
                         return false
                     }

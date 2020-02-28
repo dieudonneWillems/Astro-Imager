@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Project" customModule="Astro_Imager" customModuleProvider="target">
             <connections>
+                <outlet property="inspectorController" destination="Y7R-uS-vsF" id="HUH-Wa-H0k"/>
                 <outlet property="navigationController" destination="u3E-yr-a9e" id="BwF-rp-bZA"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
@@ -30,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="254" height="858"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
-                                    <visualEffectView blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="y8s-zW-cwD">
+                                    <visualEffectView blendingMode="behindWindow" material="sidebar" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="y8s-zW-cwD">
                                         <rect key="frame" x="0.0" y="828" width="254" height="30"/>
                                         <subviews>
                                             <box appearanceType="aqua" verticalHuggingPriority="750" boxType="separator" id="n4O-go-hbh">
@@ -57,7 +58,7 @@
                                                     <tableColumns>
                                                         <tableColumn width="251" minWidth="16" maxWidth="1000" id="JFH-En-2jh">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                                <font key="font" metaFont="controlContent" size="11"/>
+                                                                <font key="font" metaFont="label" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -94,12 +95,12 @@
                                                                     <rect key="frame" x="1" y="20" width="251" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
-                                                                        <imageView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-ZV-5EE">
-                                                                            <rect key="frame" x="3" y="0.0" width="17" height="17"/>
+                                                                        <imageView translatesAutoresizingMaskIntoConstraints="NO" id="UWR-ZV-5EE">
+                                                                            <rect key="frame" x="136" y="0.0" width="14" height="17"/>
                                                                             <imageCell key="cell" refusesFirstResponder="YES" imageScaling="proportionallyDown" image="NSActionTemplate" id="ALR-3A-Kac"/>
                                                                         </imageView>
-                                                                        <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiN-qI-Mo1">
-                                                                            <rect key="frame" x="26" y="0.0" width="225" height="17"/>
+                                                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KiN-qI-Mo1">
+                                                                            <rect key="frame" x="155" y="0.0" width="96" height="17"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="17" id="vqu-TK-ZCh"/>
                                                                             </constraints>
@@ -125,6 +126,10 @@
                                                             </prototypeCellViews>
                                                         </tableColumn>
                                                     </tableColumns>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="u3E-yr-a9e" id="oTU-6u-p6g"/>
+                                                        <outlet property="delegate" destination="u3E-yr-a9e" id="d6u-KS-lCf"/>
+                                                    </connections>
                                                 </outlineView>
                                             </subviews>
                                             <nil key="backgroundColor"/>
@@ -205,19 +210,42 @@
                                                             <constraint firstAttribute="height" constant="30" id="eDf-DA-JXD"/>
                                                         </constraints>
                                                     </customView>
-                                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Egb-Ni-l9Z">
+                                                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLA-B3-J0v">
                                                         <rect key="frame" x="0.0" y="0.0" width="295" height="828"/>
-                                                    </customView>
+                                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="M7h-3y-R4u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="295" height="828"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Egb-Ni-l9Z">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="295" height="828"/>
+                                                                </customView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Egb-Ni-l9Z" secondAttribute="trailing" id="7Dj-pJ-VmC"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Egb-Ni-l9Z" secondAttribute="bottom" id="HBY-sn-ApQ"/>
+                                                                <constraint firstItem="Egb-Ni-l9Z" firstAttribute="top" secondItem="M7h-3y-R4u" secondAttribute="top" id="IIa-fe-9WO"/>
+                                                                <constraint firstItem="Egb-Ni-l9Z" firstAttribute="leading" secondItem="M7h-3y-R4u" secondAttribute="leading" id="Sc6-18-8sf"/>
+                                                            </constraints>
+                                                        </clipView>
+                                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="o0B-KR-bUc">
+                                                            <rect key="frame" x="-100" y="-100" width="280" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="fVO-ha-VYL">
+                                                            <rect key="frame" x="280" y="0.0" width="15" height="828"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                    </scrollView>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="VLA-B3-J0v" secondAttribute="bottom" id="0Zp-Kq-Awf"/>
                                                     <constraint firstAttribute="trailing" secondItem="A5N-F9-Xm2" secondAttribute="trailing" id="3E7-Qe-Z2a"/>
-                                                    <constraint firstItem="Egb-Ni-l9Z" firstAttribute="leading" secondItem="4bV-eO-huw" secondAttribute="leading" id="3SX-XB-lrc"/>
                                                     <constraint firstItem="A5N-F9-Xm2" firstAttribute="leading" secondItem="4bV-eO-huw" secondAttribute="leading" id="MDt-xL-dry"/>
+                                                    <constraint firstItem="VLA-B3-J0v" firstAttribute="top" secondItem="A5N-F9-Xm2" secondAttribute="bottom" id="QXG-7f-Yd9"/>
                                                     <constraint firstItem="A5N-F9-Xm2" firstAttribute="top" secondItem="4bV-eO-huw" secondAttribute="top" id="RW9-M8-IDG"/>
+                                                    <constraint firstItem="VLA-B3-J0v" firstAttribute="leading" secondItem="4bV-eO-huw" secondAttribute="leading" id="Wov-gq-bW7"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="fSv-t1-qbG"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Egb-Ni-l9Z" secondAttribute="bottom" id="gYh-Mu-nOg"/>
-                                                    <constraint firstItem="Egb-Ni-l9Z" firstAttribute="top" secondItem="A5N-F9-Xm2" secondAttribute="bottom" id="nod-Vs-aOd"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Egb-Ni-l9Z" secondAttribute="trailing" id="vKd-QM-frh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VLA-B3-J0v" secondAttribute="trailing" id="vzx-oQ-bFy"/>
                                                 </constraints>
                                             </customView>
                                         </subviews>
@@ -280,6 +308,12 @@
         <customObject id="u3E-yr-a9e" customClass="NavigationController" customModule="Astro_Imager" customModuleProvider="target">
             <connections>
                 <outlet property="navigationView" destination="uTY-ZZ-qJY" id="toE-gg-lKm"/>
+            </connections>
+        </customObject>
+        <customObject id="Y7R-uS-vsF" customClass="InspectorController" customModule="Astro_Imager" customModuleProvider="target">
+            <connections>
+                <outlet property="inspectorContentView" destination="Egb-Ni-l9Z" id="6Iy-VN-DV7"/>
+                <outlet property="project" destination="-2" id="zYR-0A-nx8"/>
             </connections>
         </customObject>
     </objects>
