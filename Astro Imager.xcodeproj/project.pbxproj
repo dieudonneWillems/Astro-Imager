@@ -94,6 +94,8 @@
 		02D9756E24084136007B3EA7 /* PluginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9756224034B3C007B3EA7 /* PluginProvider.swift */; };
 		02D975712408429E007B3EA7 /* DefaultPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D975602403397D007B3EA7 /* DefaultPipeline.swift */; };
 		02D9757324088A1E007B3EA7 /* InspectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9757224088A1E007B3EA7 /* InspectorController.swift */; };
+		02D9757724094369007B3EA7 /* help.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02D975742409435B007B3EA7 /* help.plist */; };
+		02D97579240B4BA8007B3EA7 /* DisplayToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D97578240B4BA8007B3EA7 /* DisplayToolBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,6 +290,8 @@
 		02D9756A240839E1007B3EA7 /* SerializerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializerComponent.swift; sourceTree = "<group>"; };
 		02D9756C24083CBB007B3EA7 /* ImageDirectoryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDirectoryGenerator.swift; sourceTree = "<group>"; };
 		02D9757224088A1E007B3EA7 /* InspectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorController.swift; sourceTree = "<group>"; };
+		02D975742409435B007B3EA7 /* help.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = help.plist; sourceTree = "<group>"; };
+		02D97578240B4BA8007B3EA7 /* DisplayToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +419,7 @@
 			children = (
 				021C7BAE23F71348009B4F3A /* Project.xib */,
 				021C7BB623F7134A009B4F3A /* MainMenu.xib */,
+				02D97578240B4BA8007B3EA7 /* DisplayToolBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 			children = (
 				0277105F23F8CA590038A144 /* plugin.plist */,
 				02770FE623F857760038A144 /* Info.plist */,
+				02D975742409435B007B3EA7 /* help.plist */,
 				0277107023FF4CA00038A144 /* ImageDirectoryGeneratorPlugin.swift */,
 				02770FEA23F857A50038A144 /* ImageDirectoryGeneratorComponent.swift */,
 				02D9756C24083CBB007B3EA7 /* ImageDirectoryGenerator.swift */,
@@ -834,6 +840,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0277106023F8CA590038A144 /* plugin.plist in Resources */,
+				02D9757724094369007B3EA7 /* help.plist in Resources */,
 				0277106B23FC9BF60038A144 /* DirectoryInspectorView.xib in Resources */,
 				0277106923FC9B810038A144 /* DirectoryNavigatorCell.xib in Resources */,
 			);
@@ -891,6 +898,7 @@
 				02770FAD23F841330038A144 /* StackedImageDAO+CoreDataClass.swift in Sources */,
 				02770FB823F841330038A144 /* DatePropertyDAO+CoreDataProperties.swift in Sources */,
 				02770FAA23F841330038A144 /* SerializerDAO+CoreDataProperties.swift in Sources */,
+				02D97579240B4BA8007B3EA7 /* DisplayToolBarView.swift in Sources */,
 				02771073240098080038A144 /* NavigationController.swift in Sources */,
 				02770FAE23F841330038A144 /* StackedImageDAO+CoreDataProperties.swift in Sources */,
 				02770FBE23F841330038A144 /* DataPropertyDAO+CoreDataProperties.swift in Sources */,

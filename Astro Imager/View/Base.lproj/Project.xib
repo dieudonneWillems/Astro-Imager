@@ -58,7 +58,7 @@
                                                     <tableColumns>
                                                         <tableColumn width="251" minWidth="16" maxWidth="1000" id="JFH-En-2jh">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                                                <font key="font" metaFont="label" size="11"/>
+                                                                <font key="font" metaFont="controlContent" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -205,6 +205,71 @@
                                                                 <rect key="frame" x="0.0" y="-1" width="295" height="5"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             </box>
+                                                            <customView id="2Su-UJ-nK6">
+                                                                <rect key="frame" x="74" y="1" width="146" height="28"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="f0B-xJ-wVS">
+                                                                        <rect key="frame" x="110" y="6" width="16" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="16" id="KUL-xJ-NZ6"/>
+                                                                            <constraint firstAttribute="height" constant="16" id="ZjJ-uJ-nrQ"/>
+                                                                        </constraints>
+                                                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSShareTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="58b-hH-d3V">
+                                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                            <font key="font" metaFont="controlContent" size="11"/>
+                                                                        </buttonCell>
+                                                                    </button>
+                                                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="T9D-kx-X7n">
+                                                                        <rect key="frame" x="50" y="6" width="16" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="Jo0-av-rXs"/>
+                                                                            <constraint firstAttribute="width" constant="16" id="YAj-bR-TWg"/>
+                                                                        </constraints>
+                                                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFlowViewTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="ddT-Xo-hhg">
+                                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                            <font key="font" metaFont="controlContent" size="11"/>
+                                                                        </buttonCell>
+                                                                    </button>
+                                                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="l4F-zv-uVe">
+                                                                        <rect key="frame" x="80" y="6" width="16" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="16" id="gnP-Td-IG2"/>
+                                                                            <constraint firstAttribute="width" constant="16" id="jc5-7H-ZC8"/>
+                                                                        </constraints>
+                                                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSFollowLinkFreestandingTemplate" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="0P3-Cw-72M">
+                                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                            <font key="font" metaFont="controlContent" size="11"/>
+                                                                        </buttonCell>
+                                                                    </button>
+                                                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="7im-n4-vWT">
+                                                                        <rect key="frame" x="20" y="6" width="16" height="16"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="16" id="Bp7-29-sM3"/>
+                                                                            <constraint firstAttribute="height" constant="16" id="h7q-yY-BA5"/>
+                                                                        </constraints>
+                                                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSEveryone" imagePosition="only" alignment="center" controlSize="small" imageScaling="proportionallyUpOrDown" inset="2" id="NdV-MK-Xra">
+                                                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                            <font key="font" metaFont="controlContent" size="11"/>
+                                                                        </buttonCell>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="f0B-xJ-wVS" firstAttribute="top" secondItem="2Su-UJ-nK6" secondAttribute="top" constant="6" id="35X-SU-Mcq"/>
+                                                                    <constraint firstItem="7im-n4-vWT" firstAttribute="top" secondItem="2Su-UJ-nK6" secondAttribute="top" constant="6" id="5YP-gV-vPo"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="f0B-xJ-wVS" secondAttribute="bottom" constant="6" id="CV6-Xf-KtG"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="f0B-xJ-wVS" secondAttribute="trailing" constant="20" id="Fhs-GR-6Qs"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="T9D-kx-X7n" secondAttribute="bottom" constant="6" id="OAH-4x-4hk"/>
+                                                                    <constraint firstItem="l4F-zv-uVe" firstAttribute="top" secondItem="2Su-UJ-nK6" secondAttribute="top" constant="6" id="Qfd-ZX-Qiq"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="7im-n4-vWT" secondAttribute="bottom" constant="6" id="QyE-JP-wJs"/>
+                                                                    <constraint firstItem="7im-n4-vWT" firstAttribute="leading" secondItem="2Su-UJ-nK6" secondAttribute="leading" constant="20" id="Z1j-af-wOj"/>
+                                                                    <constraint firstItem="f0B-xJ-wVS" firstAttribute="leading" secondItem="l4F-zv-uVe" secondAttribute="trailing" constant="14" id="cDn-Bk-8V4"/>
+                                                                    <constraint firstItem="T9D-kx-X7n" firstAttribute="top" secondItem="2Su-UJ-nK6" secondAttribute="top" constant="6" id="lny-H5-hcV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="l4F-zv-uVe" secondAttribute="bottom" constant="6" id="mkz-NA-xFb"/>
+                                                                    <constraint firstItem="T9D-kx-X7n" firstAttribute="leading" secondItem="7im-n4-vWT" secondAttribute="trailing" constant="14" id="thi-xD-vP0"/>
+                                                                    <constraint firstItem="l4F-zv-uVe" firstAttribute="leading" secondItem="T9D-kx-X7n" secondAttribute="trailing" constant="14" id="zgO-jc-e8S"/>
+                                                                </constraints>
+                                                            </customView>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="eDf-DA-JXD"/>
@@ -276,7 +341,7 @@
                     <constraint firstItem="gv3-VQ-A3t" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" id="ZOf-Ti-KmO"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="4F20FB18-78C9-40AC-8180-A59041C80A89" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="ONn-mi-UgY">
+            <toolbar key="toolbar" implicitIdentifier="4F20FB18-78C9-40AC-8180-A59041C80A89" centeredItem="UsL-FV-wja" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="ONn-mi-UgY">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="C8D145A7-1208-42C1-B21E-A0B1DB49D5B7" label="Run" paletteLabel="Run Pipeline" image="NSRefreshTemplate" id="cTf-xD-me9">
                         <nil key="toolTip"/>
@@ -293,10 +358,52 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="jxN-OP-d7s"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="wbb-Qd-sXG"/>
+                    <toolbarItem implicitItemIdentifier="001E22A1-B52C-48A0-BD7A-C17DA9B91F60" label="" paletteLabel="Display" tag="-1" sizingBehavior="auto" id="UsL-FV-wja">
+                        <nil key="toolTip"/>
+                        <visualEffectView key="view" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" id="zgA-ai-G5q" customClass="NSVisualEffectsView">
+                            <rect key="frame" x="0.0" y="14" width="400" height="36"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nA0-f1-QJe" customClass="DisplayToolBarView" customModule="Astro_Imager" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5df-DW-CJG">
+                                            <rect key="frame" x="370" y="8" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3av-r5-HUg">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBR-MW-qSb">
+                                            <rect key="frame" x="18" y="17" width="348" height="14"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="No processes running currently" id="WwK-oD-MGJ">
+                                                <font key="font" metaFont="controlContent" size="11"/>
+                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-XV-tyy">
+                                            <rect key="frame" x="18" y="6" width="348" height="11"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <textFieldCell key="cell" controlSize="mini" lineBreakMode="clipping" title="Awaiting Processing..." id="QRV-1F-bwQ">
+                                                <font key="font" metaFont="menu" size="9"/>
+                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </customView>
+                            </subviews>
+                        </visualEffectView>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="cTf-xD-me9"/>
                     <toolbarItem reference="wbb-Qd-sXG"/>
+                    <toolbarItem reference="UsL-FV-wja"/>
                     <toolbarItem reference="wbb-Qd-sXG"/>
                 </defaultToolbarItems>
             </toolbar>
@@ -319,6 +426,10 @@
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSEveryone" width="32" height="32"/>
+        <image name="NSFlowViewTemplate" width="18" height="10"/>
+        <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
         <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSShareTemplate" width="11" height="16"/>
     </resources>
 </document>

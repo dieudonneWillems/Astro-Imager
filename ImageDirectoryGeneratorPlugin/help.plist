@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>language</key>
+	<string>en</string>
+	<key>inputs</key>
+	<dict/>
+	<key>outputs</key>
+	<dict/>
+	<key>arguments</key>
+	<dict>
+		<key>folder</key>
+		<string>The folder which will be scanned for frames.</string>
+		<key>recursive</key>
+		<string>Indicates whether the scan should include subfolders.</string>
+	</dict>
+</dict>
+</plist>
